@@ -16,18 +16,18 @@
 number = int(input("Informe um numero: "))
 divisibles = []
 
-aux = number - 1
+aux = 1
 cont = 0
 
-while aux > 1 :
+while aux <= number :
     if (number % aux) == 0 :
         cont += 1
         divisibles.append(aux)
-    aux -= 1    
+    aux += 1
 
-if cont == 0 :
-    print("O valor eh primo !")
+if cont == 2 :
+    print("O valor é primo!")
 else :
-    print("O valor nao eh primo !")
+    print("O valor não é primo!")
     print("Divisores de %d: " % number)
     print(divisibles)
