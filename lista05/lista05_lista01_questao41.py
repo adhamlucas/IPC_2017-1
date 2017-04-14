@@ -20,33 +20,40 @@
 # 6       15
 # 9       20
 # 12      25
+#Exemplo de saída do programa:
+#Valor da Dívida Valor dos Juros Quantidade de Parcelas  Valor da Parcela
+#R$ 1.000,00     0               1                       R$  1.000,00
+#R$ 1.100,00     100             3                       R$    366,00
+#R$ 1.150,00     150             6                       R$    191,67
 #----------------------------------------------------------------------------
 
-dept = float(input('Digíte o valor da sua dívida: '))
-count = 1
-percent_profits = 0
-profit = 0
-num_parcels = 1
-parcel = 0
+divida = float(input("Digite o valor da sua divida: "))
 
-print(' Valor da Dívida | Quantidade de Parcelas | Valor dos Juros | Valor da Parcela ')
-print('-------------------------------------------------------------------------------')
+c = 1
+valor = 0
+juros = 0
+porcentagem_juros = 0
+parcelas = 1
+valor_parcelas = 0
+divida_com_juros = 0
 
-while count <= 5:
-    if ( count == 1 ):
+print( "Valor da Dívida         |  Quantidade de Parcelas       |   Valor dos Juros             |   Valor da Parcela ")
+print("-"*130)
 
-        parcel = dept
-        print("%.2f" % dept, '         | ', "%.0f" % num_parcels, '                  | ',
-              "%.2f" % profit, '        | ', "%.2f" % parcel)
-        num_parcels = 3
-        percent_profits = 0.10
+while c <= 5:
+    if c == 1:
+        valor_parcelas = divida
+        print("Valor da divida =%.2f"%divida, "  |   ", "Valor dos juros =", juros, "   |   ",
+              "Quantidades de parcelas =", parcelas, "    |   ", "Valor das parcelas =%.2f"%valor_parcelas)
+        parcelas = 3
+        porcentagem_juros = 100
 
     else:
-
-        profit = dept * percent_profits
-        parcel = ( dept / num_parcels ) + profit
-        print("%.2f" % dept, '         | ', "%.0f" % num_parcels, '                  | ',
-              "%.2f" % profit, '        | ', "%.2f" % parcel)
-        num_parcels += 3
-        percent_profits += 0.05
-    count +=1
+        juros = porcentagem_juros
+        valor_parcelas = (divida + juros)/parcelas
+        divida_com_juros = divida + juros
+        print("Valor da divida =%.2f"%divida_com_juros, "  |   ", "Valor dos juros =",juros, "   |   ",
+              "Quantidades de parcelas =",parcelas, "    |   ", "Valor das parcelas =%.2f"%valor_parcelas)
+        parcelas += 3
+        porcentagem_juros += 50
+    c += 1
