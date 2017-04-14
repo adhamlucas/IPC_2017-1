@@ -30,7 +30,6 @@
 divida = float(input("Digite o valor da sua divida: "))
 
 c = 1
-valor = 0
 juros = 0
 porcentagem_juros = 0
 parcelas = 1
