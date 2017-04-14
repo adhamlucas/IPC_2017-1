@@ -13,21 +13,24 @@
 # informando, caso o numero nao seja primo, por quais numero ele eh divisivel.
 #----------------------------------------------------------
 
-number = int(input("Informe um numero: "))
-divisibles = []
+number = int(input('Digite um número: '))
+count = 1
+total_zero = 0
+count2 = 1
 
-aux = 1
-cont = 0
+while count <= number:
+    primo = number % count
+    count += 1
+    if primo == 0:
+        total_zero += 1
 
-while aux <= number :
-    if (number % aux) == 0 :
-        cont += 1
-        divisibles.append(aux)
-    aux += 1
-
-if cont == 2 :
-    print("O valor é primo!")
-else :
-    print("O valor não é primo!")
-    print("Divisores de %d: " % number)
-    print(divisibles)
+if total_zero > 2:
+    print('O valor não é primo!')
+    while count2 <= number:
+        prime2 = number % count2
+        divisibles = count2
+        count2 += 1
+        if prime2 == 0:
+            print('Divisivel por:', divisibles)
+else:
+    print('O valor é primo!')
