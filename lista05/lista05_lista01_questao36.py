@@ -1,4 +1,4 @@
-#----------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
@@ -23,13 +23,21 @@
 #   5 X 6 = 30
 #   5 X 7 = 35
 #
-#----------------------------------------------------------------
+#   Obs: Você deve verificar se o usuário não digitou o final menor que o inicial. 
+#--------------------------------------------------------------------------------------------------------------------------------
 
-table = int(input())
-start = int(input())
-end = int(input())
-count = start
-print("Vou montar a tabuada de", table, "começado em", start, "e terminando em", end)
-while count <= end:
-    print(table , "X" , count, "=", table*count)
-    count +=1
+number = int(input("Montar a tabuada de: "))
+start = int(input("Começar por: "))
+finsh = int(input("Terminar em: "))
+
+while start > finsh:
+    print("O valor final é maior que o inicial: ")
+    start = int(input("Começar por: "))
+    finsh = int(input("Terminar em: "))
+
+print("Vou monatar a tabuada de",number,"começando em",start,"e terminando em",finsh,":")
+
+while start <= finsh:
+    result = number*start
+    print(number,"X",start,"=",result)
+    start += 1
