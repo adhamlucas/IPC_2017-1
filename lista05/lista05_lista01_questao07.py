@@ -14,13 +14,13 @@
 count = 1
 bigger = 0
 
-while c <= 5:
+while count <= 5:
 
-    number = float(input("Número {}: ".format(c)))
+    number = float(input("Número {}: ".format(count)))
 
     if number > bigger:
         bigger = number
 
-    c += 1
+    count += 1
 
 print("Maior número: %d" % bigger)
