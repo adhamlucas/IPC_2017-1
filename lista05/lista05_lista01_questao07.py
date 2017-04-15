@@ -11,7 +11,7 @@
 #7)Faça um programa que leia 5 números e informe o maior número.
 #---------------------------------------------------------------------------
 
-c = 1
+count = 1
 bigger = 0
 
 while c <= 5:
