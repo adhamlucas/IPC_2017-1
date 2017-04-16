@@ -99,5 +99,5 @@ while len(athlete) != 0 or athlete == 0:
         print("Resultado final:")
         print(athlete,": %.1f"%media,"m")
         print("----"*100)
-        c -= 1
+        break
     athlete = input("Atleta: ")
