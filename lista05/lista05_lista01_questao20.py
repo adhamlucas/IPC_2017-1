@@ -14,15 +14,25 @@
 # fatorial várias vezes e limitando o fatorial números inteiros positivos e menores que 16.
 # -----------------------------------------------------------------------------------------
 
-def fatorial(n):
-   if n == 1:
-      return 1
-   else:
-      return n * fatorial(n-1)
-   
-n = int(input("Insira um numero natural n: "))
+fat_value = int(input('Digite o número do fatorial: '))
+count = 1
+term = 1
 
-if 0 < n < 16:
-    print ("O fatorial de n é: ", fatorial(n))
-else:
-    print("404 Not Found")
+while fat_value < 0 or fat_value >= 16:
+    print('Error: fatorial negativo ou maior que 16')
+    fat_value = int(input('Digite o número do fatorial: '))
+
+while count <= fat_value:
+    fatorial = count * term
+    term = fatorial
+    count += 1
+    if count > fat_value:
+        print('%.d! = %.d' % (fat_value, fatorial))
+        next = input('Deseja continuar? (Y/N)')
+        if next == 'Y' or next == 'y':
+            fat_value = int(input('Digite o número do fatorial: '))
+            while fat_value < 0 or fat_value >= 16:
+                print('Error: fatorial negativo ou maior que 16')
+                fat_value = int(input('Digite o número do fatorial: '))
+            count = 1
+            term = 1
