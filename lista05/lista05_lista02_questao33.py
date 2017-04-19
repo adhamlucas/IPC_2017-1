@@ -20,11 +20,11 @@ while (A <= 0) or (B <= 0):
     A = int(input("dividendo: "))
     B = int(input("divisor: "))
 
-c = B
+C = B
 
 while B <= A:
-    B += c
+    B += C
 
-rest = A - (b - c)
+rest = A - (B - C)
 
 print("resto da divisão:", rest)
