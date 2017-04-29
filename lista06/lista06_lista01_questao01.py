@@ -12,14 +12,13 @@
 #Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
 #---------------------------------------------------------------------------
 
-limite = 5
+limit = 5
 count = 0
 list = []
 
-while count < limite:
+while count < limit:
     number = int(input('Digite um número: '))
     list.append(number)
     count += 1
 
-for elemento in list:
-    print(elemento, end=' ')
+print(list)
