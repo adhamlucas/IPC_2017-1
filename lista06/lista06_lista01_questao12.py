@@ -20,7 +20,7 @@ contagem_alunos = 0
 qtd = 30
 
 c = 0
-while n < qtd:
+while c < qtd:
     idade = int(input())
     altura = int(input())
     idades_alunos.append(idade)
