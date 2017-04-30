@@ -21,4 +21,5 @@ while count < limit:
     list.append(number)
     count += 1
 
-print(list)
+for element in list:
+    print(element, end=" ")
