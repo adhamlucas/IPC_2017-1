@@ -1,19 +1,23 @@
 #Faça um Programa que leia 20 números inteiros e armazene-os num vetor. 
 #Armazene os números pares no vetor PAR e os números IMPARES no vetor impar. Imprima os três vetores. 
+
+count = 0
+limit = 20
 vet = []
 vet_pair = []
 vet_odd = []
 
-for i in range (0,20):
 
-    number = int(input())
+while count < limit:
+    number = int(input('Digite o número %d: ' % (count+1)))
     vet.append(number)
+    count += 1
 
-    if number % 2 == 0 :
-        vet_pair.append(number)
-
+for element in vet:
+    if element % 2 == 0:
+        vet_pair.append(element)
     else:
-        vet_odd.append(number)
+        vet_odd.append(element)
 
 print(vet)
 print(vet_pair)
