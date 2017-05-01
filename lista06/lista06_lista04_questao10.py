@@ -20,7 +20,12 @@ teens = ["dez", "onze", "doze", "treze", "quatorze", "quinze", "dezesseis", "dez
 dozens = ["dez", "vinte", "trinta", "quarenta", "cinquenta",
         "sessenta", "setenta", "oitenta", "noventa"]
 
-number = input("digite um número para ser escrito por extenso: ")
+
+number = input("digite um número para ser escrito por extenso(entre 0 e 99): ")
+while int(number) < 0 or int(number) > 99:
+   print("número inválido")
+   number = input("digite um número para ser escrito por extenso(entre 0 e 99): ")
+
 number = number.zfill(3)
 position_a = int(number[0])
 position_b = int(number[1])
