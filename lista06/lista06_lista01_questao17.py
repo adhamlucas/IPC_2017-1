@@ -5,7 +5,7 @@
 # Dayana Picanço Marquez            1715310058
 # Vitor Simões Azevedo              1715310025
 # Wilbert Luís Evangelista Marins   1715310055
-# Enrique Leo Barbosa Izel          1515310048
+# Enrique Leão Barbosa Izel         1715310048
 # Edson de Lima Barros              1715310043
 # Víctor Hugo de Oliveira Carreira  1715310063
 #
