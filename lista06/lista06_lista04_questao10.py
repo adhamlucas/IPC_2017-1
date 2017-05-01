@@ -34,14 +34,7 @@ if position_a == 0:
         if position_c >= 0 and position_c <= 9 :
             resultado = teens[position_c]
             print(resultado)
-    elif position_b == 2:
-        if position_c == 0:
-            resultado = dozens[position_b - 1]
-            print(resultado)
-        if position_c > 0 and position_c <= 9:
-            resultado = "vinte e " + units[position_c]
-            print(resultado)
-    elif position_b >= 3 and position_b <= 9:
+    elif position_b >= 2 and position_b <= 9:
         if position_c == 0:
             resultado = dozens[position_b - 1]
             print(resultado)
