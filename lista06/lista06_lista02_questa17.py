@@ -16,12 +16,12 @@
 #valores armazenados.
 #
 
-anterior = 0
+anterior = 1
 proximo = 1
 fibo = 0
 c = 1
-a = 50
-lista = []
+a = 48
+lista = [1,1]
 while c <= a:
     fibo = anterior + proximo
     anterior = proximo
