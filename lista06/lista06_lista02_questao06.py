@@ -15,7 +15,7 @@
 
 c = 0
 a = 500
-lista = []
+lista = [1]
 while c < 500:
     c = c + 5
     lista.append(c)
