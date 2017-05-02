@@ -46,6 +46,7 @@ c = 0
 while c < len(times):
     if times[c] > 1:
         print(used_numbers[c],"ocorre",times[c],"Vezes")
+    
     else:
         print(used_numbers[c],"ocorre",times[c],"Vez")
     c += 1
