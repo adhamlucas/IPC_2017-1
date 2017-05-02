@@ -1,3 +1,14 @@
+#----------------------------------------------------------------------------------------------------------------------
+# Introdução a Programação de Computadores - IPC
+# Universidade do Estado do Amazonas - UEA
+# Prof. Jucimar Jr
+# Erik Atilio Silva Rey                 1715310059
+# Evandro Padilha Barroso Filho         1715310009
+# Felipe Eduardo Silva de Almeida       1715310031
+# Nayara da Silva Cerdeira da Costa     1715310038
+# Joelson Pereira Lima 			        1715310060
+# Ian Gabriel Costa Machado              1215120276
+#
 #7.(MAT 88) Dada uma seqüência de n números reais, determinar os números que compõem a seqüência e o número de vezes
 #que cada um deles ocorre na mesma.
 #
