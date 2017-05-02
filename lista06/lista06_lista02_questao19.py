@@ -16,6 +16,8 @@
 # - A maior e a menor altura da turma;
 # - As mulheres com altura acima da média da altura das mulheres;
 # - As pessoas com altura abaixo da média da turma.
+#---------------------------------------------------------------------------
+
 
 mht = 0      #SOMA DAS ALTURAS DA TURMA
 msf = 0     #SOMA DA ALTURA DAS MULHERES DA TURMA
