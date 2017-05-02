@@ -21,5 +21,4 @@ for i in range (0, n):
     numero = int(input("digite um número: "))
     lista.append(numero)
     
-for numero in lista[::-1]:
-    print(numero)
+print(lista[::-1])
