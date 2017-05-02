@@ -1,4 +1,4 @@
-#----------------------------------------------------------------
+#---------------------------------------------------------------------------
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
@@ -12,6 +12,7 @@
 #6)Escreva um algoritmo em PORTUGOL que armazene em um vetor todos os números
 #múltiplos de 5, no intervalo fechado de 1 a 500. Após isso, o algoritmo deve imprimir
 #todos os valores armazenados
+#---------------------------------------------------------------------------
 
 c = 0
 a = 500
