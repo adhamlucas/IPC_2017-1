@@ -9,8 +9,7 @@
 # Vitor Summer Oliveira Pantaleão   1715310042
 # Reinaldo vargas                   1715310054
 #
-# Uma empresa de pesquisas precisa tabular os resultados da seguinte enquete
-# feita a uma grande quantidade de organizações:
+# Uma empresa de pesquisas precisa tabular os resultados da seguinte enquete feita a um grande quantidade de organizações: 
 # "Qual o melhor Sistema Operacional para uso em servidores?"
 
 # As possíveis respostas são:
@@ -106,4 +105,4 @@ print(so[5],         votes6,         "%.0f" %perc_6,"%")
 print("-------------------     -----")
 print("Total", totalvotes)
 
-# Falta adicionar o final, conforme mostra a linha 44.
+# Falta adicionar o final, conforme mostra a linha 46.
