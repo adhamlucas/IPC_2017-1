@@ -14,10 +14,10 @@
 #todos os valores armazenados
 #---------------------------------------------------------------------------
 
-c = 0
-a = 500
-lista = [1]
-while c < 500:
-    c = c + 5
-    lista.append(c)
-print(lista)
+numeros = []
+
+for numero in range(1,501):
+    if numero % 5 == 0:
+        numeros.append(numero)
+
+print(numeros)
