@@ -11,6 +11,8 @@
 #
 # Escreva um algoritmo em PORTUGOL que armazene em um vetor os 100 primeiros
 # números ímpares. Após isso, o algoritmo deve imprimir todos os valores armazenados.
+#---------------------------------------------------------------------------
+
 l=[]
 for i in range(1,100,2):
     l.append(i)
