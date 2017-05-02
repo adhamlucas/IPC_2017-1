@@ -23,6 +23,7 @@
 # $900 - $999
 # $1000 em diante
 # Desafio: Crie ma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs aninhados.
+#---------------------------------------------------------------------------
 l=[]
 inicio=int(input("De qual valor: "))
 lim=int(input("Até qual valor: "))
