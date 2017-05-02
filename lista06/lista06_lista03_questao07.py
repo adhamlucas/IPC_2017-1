@@ -42,6 +42,7 @@ while c < size:
     repetitions = 0
 
 c = 0
+
 while c < len(times):
     if times[c] > 1:
         print(used_numbers[c],"ocorre",times[c],"Vezes")
