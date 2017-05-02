@@ -10,6 +10,6 @@
 # Tiago Ferreira Aranha	                  1715310047
 #Escreva um algoritmo em PORTUGOL que armazene em um vetor todos os números inteiros de 0 a 50.
 #Após isso, o algoritmo deve imprimir todos os valores armazenados
-##---------------------------------------------------------------------------#
+#---------------------------------------------------------------------------
 lista=list(range(0,51))
 print(lista)
