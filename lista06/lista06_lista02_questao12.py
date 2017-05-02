@@ -1,4 +1,4 @@
-# ---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 # Introdu��o a Programa��o de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
@@ -12,16 +12,16 @@
 # Escreva um algoritmo em Python o de cada
 # n�mero. Ap�s isso, o algoritmo deve
 # imprimir todos os valores armazenados.
-# ---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 
 tamanho = 10
 quadrado = []
 
-for i in range(0, tamanho):
+for i in range (0, tamanho):
+
     numero = int(input("digite um valor: "))
-    quadrado.append(numero ** 2)
+    quadrado.append(numero**2)
 
-print("quadrado dos valores apresentados:")
+print ("quadrado dos valores apresentados:")
 
-for numero in quadrado:
-    print(numero)
+print(quadrado)
