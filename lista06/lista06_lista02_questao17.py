@@ -14,7 +14,7 @@
 #Escreva um algoritmo em PORTUGOL que armazene em um vetor os 50 primeiros
 #termos da série de FIBONACCI. Após isso, o algoritmo deve imprimir todos os
 #valores armazenados.
-#
+#---------------------------------------------------------------------------
 
 anterior = 1
 proximo = 1
