@@ -42,8 +42,8 @@ while contador < montante:
                 len(maior)
                 print(salario,"salário + abono = ",soma)
 
-print("*Foram processados ", len(vetor_salario)," colaboradores")
-print("*O total gasto com abono  foi de :", sum(maior))
-print("*Maior valor de abono pago foi: ", 'R$',max(maior))
+print("Foram processados ", len(vetor_salario)," colaboradores")
+print("O total gasto com abono  foi de :", sum(maior))
+print("Maior valor de abono pago foi: ", 'R$',max(maior))
 print("valor minimo pago a: ",len(maior), "funcionários")
 
