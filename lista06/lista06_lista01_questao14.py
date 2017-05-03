@@ -1,3 +1,13 @@
+#---------------------------------------------------------------------------
+# Introdução a Programação de Computadores - IPC
+# Universidade do Estado do Amazonas - UEA
+# Prof. Jucimar Jr
+#
+# FANG YAO                                1115180236
+# LUIZ PAULO MACHADO E SOUZA              1515200542
+# FELIPE GUERREIRO DE MELLO               1315120052
+# YURI LEANDRO DE AQUINO SILVA            1615100462  
+#
 # 14) Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
 # "Telefonou para a vítima?"
 # "Esteve no local do crime?"
@@ -20,10 +30,10 @@ while c < size:
         sim += 1
     c += 1
 if sim < 2:
-    print("voce eh inocente!")
-elif sim == 2:
-    print("voce eh suspeito!")
+    print("voce é o inocente!")
+elif sim >= 2:
+    print("voce é o suspeito!")
 elif 4<= sim < 5:
-    print("voce eh cumplice!")
+    print("voce é o cumplice!")
 elif sim == 5:
-    print("voce eh o assassino!!")
+    print("voce é o assassino!!")
