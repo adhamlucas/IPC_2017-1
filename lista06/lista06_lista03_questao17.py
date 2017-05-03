@@ -13,13 +13,13 @@
 #-------------------------------------------------------------------------------------------------------------
 cont = 0
 sum = 0
-n = int(input("Digite o tamanho da sequencia"))
+n = int(input("Digite o tamanho da sequência: "))
 lista = []
 
 while cont < n:
-    number = int(input("Digite um numero inteiro"))
+    number = int(input("Digite um número inteiro: "))
     lista.append(number)
-    cont = cont +1
+    cont = cont + 1
 print(lista)
 
 for element in lista:
