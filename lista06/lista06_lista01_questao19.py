@@ -4,10 +4,10 @@
 # Prof. Jucimar Jr
 #
 # Ulisses Antonio Antonino da Costa 1515090555
-# Walter Nobre da Silva conceição   1715310057
+# Walter Nobre da Silva Conceição   1715310057
 # Jandinne Duarte de Oliveira       1015070265
 # Vitor Summer Oliveira Pantaleão   1715310042
-# Reinaldo vargas                   1715310054
+# Reinaldo Vargas                   1715310054
 #
 # Uma empresa de pesquisas precisa tabular os resultados da seguinte enquete feita a um grande quantidade de organizações: 
 # "Qual o melhor Sistema Operacional para uso em servidores?"
