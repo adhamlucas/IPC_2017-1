@@ -34,4 +34,4 @@ for i in range(tam1):
                 j += 1
         if c == tam2:
                 cont += 1
-print(cont)
+print('Temos que a palavra ocorre' ,cont ,'vezes na frase.')
