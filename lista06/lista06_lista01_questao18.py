@@ -2,12 +2,12 @@
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Erik Atilio Silva Rey                 1715310059
-# Evandro Padilha Barroso Filho         1715310009
-# Felipe Eduardo Silva de Almeida       1715310031
-# Nayara da Silva Cerdeira da Costa     1715310038
-# Joelson Pereira Lima 			        1715310060
-# Ian Gabriel Costa Machado             1215120276
+# Erik Atilio Silva Rey                  1715310059
+# Evandro Padilha Barroso Filho          1715310009
+# Felipe Eduardo Silva de Almeida        1715310031
+# Nayara da Silva Cerdeira da Costa      1715310038
+# Joelson Pereira Lima 			         1715310060
+# Ian Gabriel Costa Machado              1215120276
 #
 #18)Uma grande emissora de televisão quer fazer uma enquete entre os seus telespectadores para saber qual o melhor jogador
 #após cada jogo. Para isto, faz-se necessário o desenvolvimento de um programa, que será utilizado pelas telefonistas,
