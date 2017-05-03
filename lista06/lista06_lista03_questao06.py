@@ -19,19 +19,19 @@
 
 frase = input()
 palavra = input()
-tam1=len(frase)
-tam2=len(palavra)
-i=0
-cont=0
+tam1 = len(frase)
+tam2 = len(palavra)
+i = 0
+cont = 0
 for i in range(tam1):
-        c=0
-        j=i
-        k=0
-        while j<tam2+i and j<tam1:
+        c = 0
+        j = i
+        k = 0
+        while j < tam2 + i and j < tam1:
                 if palavra[k] == frase[j]:
                         c+=1
-                k+=1
-                j+=1
+                k += 1
+                j += 1
         if c == tam2:
-                cont+=1
+                cont += 1
 print(cont)
