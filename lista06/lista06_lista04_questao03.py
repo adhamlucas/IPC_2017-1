@@ -1,4 +1,4 @@
-#---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
@@ -8,10 +8,30 @@
 # Natália Cavalcantre Xavier              1715310021
 # Tiago Ferreira Aranha	                  1715310047
 #
-# Lista 4. Q 3 - Nome na vertical. Faça um programa que solicite o nome
-#       do usuário e imprima-o na vertical.
+# Lista 4. Q 1 - Tamanho de strings. Faça um programa que leia 2 strings
+#  e informe o conteúdo delas seguido do seu comprimento.
+# Informe também se as duas strings possuem o mesmo comprimento
+#  e são iguais ou diferentes no conteúdo.
+
 # -------------------------------------------------------------------------------------------------------------
 
-nome = str(input())
-for letra in nome:
-    print(letra)
+string1 = str(input())
+string2 = str(input())
+
+print("Compara duas strings")
+
+print("String 1: %s" % string1)
+print("String 2: %s" % string2)
+
+print("Tamanho de: %s, %d" % (string1, len(string1)))
+print("Tamanho de: %s, %d" % (string2, len(string2)))
+
+if len(string1) != len(string2):
+    print("As duas strings são de tamanhos diferentes.")
+else:
+    print("As duas strings são de tamanhos iguais.")
+
+if string1 == string2:
+    print("As duas strings possuem conteúdo iguais.")
+else:
+    print("As duas strings possuem conteúdo diferente.")
