@@ -6,7 +6,7 @@
 # Evandro Padilha Barroso Filho          1715310009
 # Felipe Eduardo Silva de Almeida        1715310031
 # Nayara da Silva Cerdeira da Costa      1715310038
-# Joelson Pereira Lima 			         1715310060
+# Joelson Pereira Lima 			     1715310060
 # Ian Gabriel Costa Machado              1215120276
 #
 #18)Uma grande emissora de televisão quer fazer uma enquete entre os seus telespectadores para saber qual o melhor jogador
