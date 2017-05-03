@@ -104,5 +104,3 @@ print(so[4],         votes5,         "%.0f" %perc_5,"%")
 print(so[5],         votes6,         "%.0f" %perc_6,"%")
 print("-------------------     -----")
 print("Total", totalvotes)
-
-# Falta adicionar o final, conforme mostra a linha 46.
