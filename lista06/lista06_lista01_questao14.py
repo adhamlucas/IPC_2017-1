@@ -30,10 +30,10 @@ while c < size:
         sim += 1
     c += 1
 if sim < 2:
-    print("voce é o inocente!")
+    print("voce eh inocente!")
 elif sim >= 2:
-    print("voce é o suspeito!")
+    print("voce eh suspeito!")
 elif 4<= sim < 5:
-    print("voce é o cumplice!")
+    print("voce eh cumplice!")
 elif sim == 5:
-    print("voce é o assassino!!")
+    print("voce eh o assassino!!")
