@@ -8,8 +8,9 @@
 # Gabriel Nascimento de Oliveira  	  	1715310052
 # Diogo Roberto Duarte da Costa 	  	1715310056
 # João Vitor de Cordeiro B. Gonçalves 	1515140036
-
+#
 #Faça um Programa que leia um vetor de 10 números reais e mostre-os na ordem inversa.
+#------------------------------------------------------------------------------
 
 vet = []
 
