@@ -1,3 +1,14 @@
+#---------------------------------------------------------------------------
+# Introdução a Programação de Computadores - IPC
+# Universidade do Estado do Amazonas - UEA
+# Prof. Jucimar Jr
+
+# Antônio Diego Furtado da Silva         1715310004
+# Aracille de Souza Barbosa              1315120206
+# Marcus Vinicius Paes da Silva Santos   1515070060
+# Silas Castro de Mendonça               1715310066
+# Wesley da Silva Rocha                  1715310026
+#
 #15) Faça um programa que leia um número indeterminado de valores, correspondentes a notas, encerrando a entrada de
 #dados quando for informado um valor igual a -1 (que não deve ser armazenado). Após esta entrada de dados, faça:
 #Mostre a quantidade de valores que foram lidos;
