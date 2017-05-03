@@ -8,8 +8,8 @@
 # Gabriel Nascimento de Oliveira  	  	1715310052
 # Diogo Roberto Duarte da Costa 	  	1715310056
 # João Vitor de Cordeiro B. Gonçalves 		1515140036
-
-
+#
+#
 #Faça um programa que receba a temperatura média de cada mês do ano e armazene-as em uma lista. Após isto, calcule a média anual
 #das temperaturas e mostre todas as temperaturas acima da média anual, e em que mês elas ocorreram
 # (mostrar o mês por extenso: 1 – Janeiro, 2 – Fevereiro, . . . ).
