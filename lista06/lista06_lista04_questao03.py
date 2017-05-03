@@ -1,14 +1,11 @@
-# ---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Lista 4. Q 5 - Nome na vertical em escada invertida.
-# Altere o programa anterior de modo que a escada seja invertida.
-
+# Lista 4. Q 3 - Nome na vertical. Faça um programa que solicite o nome
+#       do usuário e imprima-o na vertical.
 # -------------------------------------------------------------------------------------------------------------
 
 nome = str(input())
-
-for i in range(len(nome) + 1,1,-1):
-    print(nome[0:i])
-print(nome[0])
+for letra in nome:
+    print(letra)
