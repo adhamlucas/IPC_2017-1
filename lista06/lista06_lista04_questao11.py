@@ -1,54 +1,54 @@
-# ---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Adham Lucas da Silva Oliveira           1715310059
-# Gabriel Barroso da Silva Lima           1715310011
-# Guilherme Silva de Oliveira             1715310034
-# Natália Cavalcantre Xavier              1715310021
-# Tiago Ferreira Aranha	                  1715310047
+
+# Gabriel de Queiroz Sousa                1715310044
+# Lucas Gabriel Silveira Duarte           1715310053
+# Matheus de Oliveira Marques             1515310514
+# Rodrigo Duarte de Souza                 1115140049
 #
-# Lista 4. Q 11 Jogo de Forca. Desenvolva um jogo da forca.
-#           O programa terá uma lista de palavras lidas de
-#           um arquivo texto e escolherá uma aleatoriamente.
-#           O jogador poderá errar 6 vezes antes de ser enforcado.
-# ----------------------------------------------------------------------------
+# Desenvolva um jogo da forca. O programa terá uma lista de palavras lidas de um arquivo texto e escolherá uma aleatoriamente.
+# O jogador poderá errar 6 vezes antes de ser enforcado.
+#---------------------------------------------------------------------------
 
 import random
-
-palavras = ['vaca', 'coelho', 'sapo']
-
-palavra = random.choice(palavras)
-
-erro = 0
-acerto = -1
-errado = 0
-forca = []
-for i in palavra:
-    forca.append("_")
-
+arq = open("forc.txt", "r")
+texto = arq.readlines()
+palavra = random.choice(texto)
 print(palavra)
+i = 1
+erro = 0
+cont = 0
+frase = []
+while i < len(palavra):
+    frase.append("_")
+    i+=1
+print(*frase)
+i = 0
+tam = len(palavra)
 
-while erro <= 6:
+while erro < 6:
+    forc = input("Informe uma letra: ")
+    while i < len(palavra):
+        if forc == palavra[i]:
+            frase[i] = forc
+            i +=1
+            cont = 1
+            tam = tam - cont
+        else:
+            i +=1
+    print(*frase)
 
-    if errado > 0 and acerto == 0:
-        print("Você errou pela %dª vez. Tente de novo!" % errado)
-    letra_teste = input("\nDigite uma letra: ")
-    acerto = 0
-    for i, letra in enumerate(palavra):
-        if letra_teste == letra and letra != "_":
-            forca[i] = letra_teste
-            acerto += 1
-
-
-    if acerto > 0:
-        errado += 1
-
-    erro += 1
-
-    print("A palavra é: ", end='')
-    for i in forca:
-        print(i, end=' ')
-
-if erro <= 6:
-    print("Você ganhou!")
+    if cont == 0:
+        erro +=1
+        if erro < 6:
+            print("Você errou pela %dª vez" % erro)
+        else:
+            print("Você errou pela 6ª vez. Perdeu!!")
+    elif tam == 1:
+        print("Parabéns você ganhou!! Frase = ", end="")
+        print(*frase)
+        exit(0)
+    cont = 0
+    i = 0
