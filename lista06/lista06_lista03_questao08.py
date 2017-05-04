@@ -1,24 +1,24 @@
 #---------------------------------------------------------------------------
-# Introdução a Programação de Computadores - IPC
+# IntroduÃ§Ã£o a ProgramaÃ§Ã£o de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
 
 # Adham Lucas da Silva Oliveira           1715310059
 # Gabriel Barroso da Silva Lima           1715310011
 # Guilherme Silva de Oliveira             1715310034
-# Natália Cavalcante Xavier              1715310021
+# NatÃ¡lia Cavalcante Xavier              1715310021
 # Tiago Ferreira Aranha	                  1715310047
 #
-# Deseja-se publicar o número de acertos de cada aluno em uma prova em forma de testes. 
-# A prova consta de 30 questões, cada uma com cinco alternativas identificadas por A, B, C, D e E. Para isso são dados:
+# Deseja-se publicar o nÃºmero de acertos de cada aluno em uma prova em forma de testes. 
+# A prova consta de 30 questÃµes, cada uma com cinco alternativas identificadas por A, B, C, D e E. Para isso sÃ£o dados:
 
-# Dadas duas seqüências com n números inteiros entre 
-# 0 e 9, interpretadas como dois números inteiros
-# de n algarismos, calcular a seqüência de números que 
+# Dadas duas seqÃ¼Ãªncias com n nÃºmeros inteiros entre 
+# 0 e 9, interpretadas como dois nÃºmeros inteiros
+# de n algarismos, calcular a seqÃ¼Ãªncia de nÃºmeros que 
 # representa a soma dos dois inteiros.
 #---------------------------------------------------------------------------
 
-n = int(input("número de algarismo de cada termo: "))
+n = int(input("nÃºmero de algarismo de cada termo: "))
 i = 0
 primeiro = []
 segundo = []
@@ -33,12 +33,14 @@ while i < n:
     
     while 0 > termo > 10:
         
-        termo = int(input("algarismo inválido, digite outro: "))
+        termo = int(input("algarismo invÃ¡lido, digite outro: "))
         
     primeiro.append(termo)
     i += 1
     
 i = 0    
+
+print("defina o segundo termo:")
 
 while i < n:
 
@@ -46,7 +48,7 @@ while i < n:
     
     while 0 > termo > 10:
         
-        termo = int(input("algarismo inválido, digite outro: "))
+        termo = int(input("algarismo invÃ¡lido, digite outro: "))
         
     segundo.append(termo)
     i += 1
