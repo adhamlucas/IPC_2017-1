@@ -3,13 +3,15 @@
 using namespace std;
 
 struct Questao {
-    int lista_id, questao_id, dificuldade;
-    Questao(int lista_id, int questao_id, int dificuldade) :
+    int lista_id, questao_id;
+    double dificuldade;
+    Questao(int lista_id, int questao_id, double dificuldade) :
         lista_id(lista_id), questao_id(questao_id), dificuldade(dificuldade)
     {}
     void mostraInfo() {
         string lista = to_string(this->lista_id);
         string questao = to_string(this->questao_id);
+        string dificuldade = to_string(this->dificuldade);
         cout << "Lista " << lista << ", questão " << questao << endl;
     }
 };
@@ -31,8 +33,8 @@ struct Grupo {
     void adicionaQuestao(Questao nova_questao) {
         this->questoes.emplace_back(nova_questao);
     }
-    int dificuldadeTotal() {
-        int dificuldade_total = 0;
+    double dificuldadeTotal() {
+        double dificuldade_total = 0.0;
         for (auto questao : questoes) {
             dificuldade_total += questao.dificuldade;
         }
@@ -55,7 +57,7 @@ bool grupoPorId(Grupo& a, Grupo& b) {
     return a.grupo_id < b.grupo_id;
 }
 
-int menorDificuldade(vector <Grupo>& grupos) {
+int indiceMenorDificuldade(vector <Grupo>& grupos) {
     int menor_dificuldade_total = (int)1e9;
     int indice = -1;
     for (int i = 0; i < (int)grupos.size(); i++) {
@@ -74,11 +76,16 @@ int main() {
     for (int lista_id = 1; lista_id <= qtd_lista; lista_id++) {
         int qtd_questao;
         cin >> qtd_questao;
-        for (int j = 0; j < qtd_questao; j++) {
-            int questao_id, dificuldade;
-            // Colocar dificuldade como entrada
+        for (int j = 1; j <= qtd_questao; j++) {
+            int questao_id;
             cin >> questao_id;
-            dificuldade = questao_id;
+            double dificuldade = 0.0;
+            // Gambiarra:
+            if (j != questao_id) {
+                dificuldade = 10.0;
+            } else {
+                dificuldade = (1.0*questao_id/qtd_questao)*5;
+            }
             questoes.emplace_back(lista_id, questao_id, dificuldade);
         }
     }
@@ -90,8 +97,9 @@ int main() {
     for (int grupo_id = 1; grupo_id <= qtd_grupo; grupo_id++) {
         grupos.emplace_back(Grupo(grupo_id));
     }
+    random_shuffle(grupos.begin(), grupos.end());
     for (auto questao : questoes) {
-        int i = menorDificuldade(grupos);
+        int i = indiceMenorDificuldade(grupos);
         grupos[i].adicionaQuestao(questao);
     }
 
@@ -99,6 +107,7 @@ int main() {
 
     for (auto grupo : grupos) {
         grupo.mostraInfo();
+        cout << endl;
     }
 
     return 0;
