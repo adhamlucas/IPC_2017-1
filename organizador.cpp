@@ -11,7 +11,6 @@ struct Questao {
     void mostraInfo() {
         string lista = to_string(this->lista_id);
         string questao = to_string(this->questao_id);
-        string dificuldade = to_string(this->dificuldade);
         cout << "Lista " << lista << ", questão " << questao << endl;
     }
 };
