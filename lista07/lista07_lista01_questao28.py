@@ -8,7 +8,8 @@
 # Joelson Pereira Lima 			        1715310060
 # Víctor Hugo de Oliveira Carreira      1715310063
 #
-#28)Criar  um  algoritmo  que  leia  uma  matriz  ANxN(N10)e  verifique  (informe)  se  tal matriz é ou nãoanti-simétrica
+#28)Criar  um  algoritmo  que  leia  uma  matriz  ANxN(N10)e  verifique  (informe)  se  tal matriz é ou 
+#não anti-simétrica
 #(At=-A).
 #
 #-----------------------------------------------------------------------------------------------------------------------
