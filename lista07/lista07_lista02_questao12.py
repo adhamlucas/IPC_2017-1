@@ -1,45 +1,45 @@
 # ----------------------------------------------------------------------------------------------------------------------
-# IntroduÁ„o a ProgramaÁ„o de Computadores - IPC
+# Introdu√ß√£o a Programa√ß√£o de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Gabriel barroso da Silva Lima                      1715310011
-# Frederico Victor Alfaia Rodrigues                  1515200030
-# AndrÈ Neves
-# Diego Figueira
+# Gabriel barroso da Silva Lima      1715310011
+# Frederico Victor Alfaia Rodrigues  1515200030
+# Andr√© Luis Laborda neves           1515070006
+# Diego Reis Figueira                1515070169
 # Diogo Duarte
 #
-# Deseja-se fazer a emiss„o da folha de pagamento
-# de uma empresa. Para cada um dos n funcion·rios
-# da empresa s„o dadas as seguintes informaÁıes:
+# Deseja-se fazer a emiss√£o da folha de pagamento
+# de uma empresa. Para cada um dos n funcion√°rios
+# da empresa s√£o dadas as seguintes informa√ß√µes:
 #
 # NOME 
-# SAL (sal·rio) 
+# SAL (sal√°rio) 
 # HED (horas extras diurnas) 
 # HEN (horas extras noturnas) 
-# ND (n˙mero de dependentes) 
+# ND (n√∫mero de dependentes) 
 # FAL (faltas em horas) 
 # DE (descontos eventuais) 
-# REF (gastos com refeiÁıes feitas na empresa) 
-# VAL (vales retirados durante o mÍs).
+# REF (gastos com refei√ß√µes feitas na empresa) 
+# VAL (vales retirados durante o m√™s).
 # 
-# Emitir as seguintes informaÁıes:
+# Emitir as seguintes informa√ß√µes:
 #     
 # nome, 
-# sal·rio, 
+# sal√°rio, 
 # horas extras = HED * SAL/160 + HEN * 1.2 * SAL/160, 
-# sal·rio famÌlia = ND * 0.05 * sal·rio mÌnimo vigente, 
-# sal·rio bruto = sal·rio + horas extras + sal·rio famÌlia.
+# sal√°rio fam√≠lia = ND * 0.05 * sal√°rio m√≠nimo vigente, 
+# sal√°rio bruto = sal√°rio + horas extras + sal√°rio fam√≠lia.
 # 
 # Descontos efetuados:
 #    
 # INAMPS = 0.08 * SAL, 
 # faltas = FAL * SAL/160, 
-# refeiÁıes, 
+# refei√ß√µes, 
 # vales, 
 # descontos eventuais, 
-# imposto de renda = 0.08 * sal·rio bruto.
+# imposto de renda = 0.08 * sal√°rio bruto.
 # 
-# Sal·rio lÌquido = sal·rio bruto - desconto total. 
+# Sal√°rio l√≠quido = sal√°rio bruto - desconto total. 
 
 matriz = []
 n = int(input())
@@ -49,14 +49,14 @@ for i in range (n):
     matriz.append([0]*9)
     
     matriz[i][0] = input("nome: ")
-    matriz[i][1] = int(input("sal·rio: "))
+    matriz[i][1] = int(input("sal√°rio: "))
     matriz[i][2] = int(input("horas extras diurnas: "))
     matriz[i][3] = int(input("horas extras noturnas: "))
-    matriz[i][4] = int(input("n˙mero de dependentes: "))
+    matriz[i][4] = int(input("n√∫mero de dependentes: "))
     matriz[i][5] = int(input("faltas em horas: "))
     matriz[i][6] = int(input("descontos eventuais: "))
-    matriz[i][7] = int(input("gastos com refeiÁıes feitas na empresa: "))
-    matriz[i][8] = int(input("vales retirados durante o mÍs: "))
+    matriz[i][7] = int(input("gastos com refei√ß√µes feitas na empresa: "))
+    matriz[i][8] = int(input("vales retirados durante o m√™s: "))
 
 print(".")
 
@@ -72,11 +72,11 @@ for i in range (n):
     salliq = salbruto - INAMPS - faltas
     
     print("--//--//--//--//--//--//--//--//--//--//--//--")
-    print("funcion·rio", n)
-    print("sal·rio:", matriz[i][1])
+    print("funcion√°rio", n)
+    print("sal√°rio:", matriz[i][1])
     print("horas extras:", exhoras)
-    print("sal·rio famÌlia:", salfami)
-    print("sal·rio bruto:", salbruto)
+    print("sal√°rio fam√≠lia:", salfami)
+    print("sal√°rio bruto:", salbruto)
     print("...........................")
     print("Descontos efetuados")
     print("INAMPS:", INAMPS)
@@ -84,5 +84,5 @@ for i in range (n):
     print("imposto de renda:", impren)
     print("descontos totais:", destot)
     print("...........................")
-    print("sal·rio lÌquido:", salliq)
+    print("sal√°rio l√≠quido:", salliq)
     print("--//--//--//--//--//--//--//--//--//--//--//--")
