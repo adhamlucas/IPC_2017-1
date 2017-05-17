@@ -1,15 +1,15 @@
 # ----------------------------------------------------------------------------------------------------------------------
-# Introdução a Programação de Computadores - IPC
+# IntroduÃ§Ã£o a ProgramaÃ§Ã£o de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Gabriel barroso da Silva Lima                      1715310011
-# Frederico Victor Alfaia Rodrigues                  1515200030
-# André Neves
-# Diego Figueira
+# Gabriel barroso da Silva Lima      1715310011
+# Frederico Victor Alfaia Rodrigues  1515200030
+# AndrÃ© Luis Laborda neves           1515070006
+# Diego Reis Figueira                1515070169
 # Diogo Duarte
 #
 # Criar um algoritmo que entre com valores inteiros para uma matriz m 3 x 3 e imprima
-# a matriz final rotacionada 90º graus
+# a matriz final rotacionada 90Âº graus
 
 matriz = []
 
