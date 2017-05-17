@@ -65,7 +65,7 @@ for i in range (n):
     exhoras = (matriz[i][2] * matriz[i][1]) / 160  + (matriz[i][3] * 1.2 * matriz[i][1]) / 160
     salfami = matriz[i][4] * 937 * 0.05
     salbruto = matriz[i][1] + exhoras + salfami
-    INAMPS = 0.08 * matriz[i][1] 
+    inamps = 0.08 * matriz[i][1] 
     faltas = (matriz[i][5] * matriz[i][1])/160
     impren = salbruto * 0.08
     destot = faltas + INAMPS + impren + matriz[i][6] + matriz[i][7] + matriz[i][8]
@@ -79,7 +79,7 @@ for i in range (n):
     print("salário bruto:", salbruto)
     print("...........................")
     print("Descontos efetuados")
-    print("INAMPS:", INAMPS)
+    print("INAMPS:", inamps)
     print("faltas:", faltas)
     print("imposto de renda:", impren)
     print("descontos totais:", destot)
