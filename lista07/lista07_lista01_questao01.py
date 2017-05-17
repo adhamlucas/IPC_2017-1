@@ -1,7 +1,5 @@
 #----------------------------------------------------------------------------------------------------------------------
-# Introdução a Programação de Computadores - IPC
-# Universidade do Estado do Amazonas - UEA
-# Prof. Jucimar Jr
+
 # 
 # Aracille de Souza Barbosa                     1315120206
 # Kethelen Tamara Braga Barbosa                 1525212002
