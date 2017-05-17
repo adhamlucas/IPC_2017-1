@@ -1,3 +1,14 @@
+
+#----------------------------------------------------------------------------------------------------------------------
+# Introdução a Programação de Computadores - IPC
+# Universidade do Estado do Amazonas - UEA
+# Prof. Jucimar Jr
+# Antonio Diego Furtado da Silva            1715310004
+# Fangyao                                   1115180236
+# Matheus de Oliveira Marques               1515310514
+# Reinaldo da Silva Varas                   1715310054
+# Silas Castro de Mendonça                  1715310066
+#
 #29) Criar um algoritmo que leia uma matriz A2x2 e calcule a respectiva inversa A-1.
 #-----------------------------------------------------------------------------------------------------------------------
 import random
