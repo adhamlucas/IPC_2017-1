@@ -4,7 +4,7 @@ linha = []
 for i in range(10):
     for j in range(10):
         linha.append(input())
-    matriz.append(coluna)
+    matriz.append(linha)
     
 for i in range(10):
     for j in range(10):
