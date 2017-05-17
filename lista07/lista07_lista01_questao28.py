@@ -12,7 +12,7 @@
 #determinante. Para cálculo do determinante de uma matriz de ordem 2, é simplesmente
 #computar a diferença entre os produtos das diagonais principal e secundária,
 #respectivamente.
-#----------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
 linhas = int(input())
 colunas = int(input())
 matriz = []
