@@ -1,5 +1,16 @@
-#13) Entrar com valores para duas matrizes inteiras de ordem cinco. Gerar e imprimir a
-#matriz diferença.
+
+#----------------------------------------------------------------------------------------------------------------------
+# Introdução a Programação de Computadores - IPC
+# Universidade do Estado do Amazonas - UEA
+# Prof. Jucimar Jr
+# Antonio Diego Furtado da Silva            1715310004
+# Fangyao                                   1115180236
+# Matheus de Oliveira Marques               1515310514
+# Reinaldo da Silva Varas                   1715310054
+# Silas Castro de Mendonça                  1715310066
+#
+#Lista1. Questão 13) Entrar  com  valores  para
+#duas  matrizes  inteiras  de  ordem  cinco.  Gerar  e  imprimir  a matriz diferença.
 #-----------------------------------------------------------------------------------------------------------------------
 
 import random
