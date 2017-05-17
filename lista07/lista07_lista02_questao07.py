@@ -37,6 +37,7 @@ c = linhas - 1
 while c > -1:
     soma += matriz[c][c]
     c -= 1
+    
 
 somas.append(soma)
 
