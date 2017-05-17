@@ -1,0 +1,44 @@
+#------------------------------------------------------------------------------
+# Introdução a Programação de Computadores - IPC
+# Universidade do Estado do Amazonas - UEA
+# Prof. Jucimar Jr
+# 
+# Adham Lucas da Silva Oliveira                 1715310001
+# Jandinne Duarte de Oliveira                   1015070265
+# Roberta de Oliveira da Cruz                   0825070169
+# Nayara da Silva Cerdeira da Costa             1715310038
+# Wesley da Silva Rocha                         1715310026 
+#
+# Dadas duas matrizes reais  Amxn e Bnxp, calcular o produto de A por B. 
+#----------------------------------------------------------------------------
+m = int(input('Digite o total de linhas de A: '))
+n = int(input('Digite o toal de colunas de  A: '))
+A = []
+
+for x in range(m):
+    linha = []
+    for y in range(n):
+        linha.append(int(input('Digite o valor(%d,%d): ' %(x,y))))
+    A.append(linha)
+
+B = []
+p = int(input('Digite o total de colunas de B: '))
+
+for x in range(n):
+    linha = []
+    for y in range(p):
+        linha.append(int(input('Digite o valor(%d,%d): '% (x,y))))
+    B.append(linha)
+
+C = []
+
+for x in range(m):
+    linha = []
+    for y in range(n):
+        elemento = 0
+        for z in range(n):
+            elemento += A[x][z] * B[z][y]
+        linha.append(elemento)
+    C.append(linha)
+
+print(C)
