@@ -25,7 +25,7 @@ for month in range(0,12):
 
     for we in range(0,4):
 
-        week.append(float(input('Mês %s | Semana %i: ' % (meses[month],(we + 1)))))
+        week.append(float(input('Mês %s | Semana %i R$ ' % (meses[month],(we + 1)))))
 
     year.append(week)
     week = []
@@ -39,14 +39,14 @@ mes = 0
 for month in year:
 
     for x in month:
-        print('Arrecadação da semana %i R$: %.2f ' % (wee,x), end= '| ')
+        print('Arrecadação da semana %i R$ %.2f ' % (wee,x), end= '| ')
         acm_week += x
         wee += 1
     print()
-    print('Total arrecadado no mês de %s R$: %.2f ' % (meses[mes],acm_week))
+    print('Total arrecadado no mês de %s R$ %.2f ' % (meses[mes],acm_week))
     print()
     acm_year += acm_week
     acm_week = 0
     mes += 1
 
-print('Total recebido no ano R$: %.2f ' % acm_year)
+print('Total recebido no ano R$ %.2f ' % acm_year)
