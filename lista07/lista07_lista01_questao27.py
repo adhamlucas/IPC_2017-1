@@ -6,7 +6,7 @@
 # Frederico Victor Alfaia Rodrigues  1515200030
 # André Luis Laborda neves           1515070006
 # Diego Reis Figueira                1515070169
-# Diogo Duarte
+# Luis Gustavo Moura de Queiroz      1715310037
 #
 # Criar um algoritmo que leia uma matriz ANxN (N <= 10) e verifique (informe) se tal
 # matriz é ou não simétrica (At = A).
