@@ -6,7 +6,7 @@
 # Carlos Eduardo Tapudima de Oliveira	    1715310030
 # Gabriel de Queiroz Sousa                  1715310044
 # Lucas Gabriel Silveira Duarte             1715310053
-# Natália Cavalcantre Xavier                1715310021
+# Natália Cavalcante Xavier                1715310021
 #
 # Lista1. Questão 12)Entrar  com  valores  inteiros  para  um  matriz  A4x4e  para  uma  matriz  B 4x4
 # Gerar  e imprimir a SOMA (A+B).
