@@ -8,11 +8,11 @@
 # Joelson Pereira Lima 			        1715310060
 # Víctor Hugo de Oliveira Carreira      1715310063
 #
-#25) Criar um algoritmo que leia valores para uma matriz M2x2. Calcular e imprimir o
-#determinante. Para cálculo do determinante de uma matriz de ordem 2, é simplesmente
-#computar a diferença entre os produtos das diagonais principal e secundária,
-#respectivamente.
+#28)Criar  um  algoritmo  que  leia  uma  matriz  ANxN(N10)e  verifique  (informe)  se  tal matriz é ou nãoanti-simétrica
+#(At=-A).
+#
 #-----------------------------------------------------------------------------------------------------------------------
+
 linhas = int(input())
 colunas = int(input())
 matriz = []
