@@ -10,7 +10,6 @@
 
 import random
 
-
 matrix = []
 row = 10
 column = 10
