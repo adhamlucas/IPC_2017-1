@@ -1,5 +1,5 @@
 #----------------------------------------------------------------------------------------------------------------------
-# Introdução a Programação de Computadores - IP
+# Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
 # Erik Atilio Silva Rey                 1715310059
