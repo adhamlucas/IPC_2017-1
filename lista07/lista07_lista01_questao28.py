@@ -6,7 +6,7 @@
 # Evandro Padilha Barroso Filho         1715310009
 # Felipe Eduardo Silva de Almeida       1715310031
 # Joelson Pereira Lima 			        1715310060
-# Víctor Hugo de Oliveira Carreir      1715310063
+# Víctor Hugo de Oliveira Carreira      1715310063
 #
 #25) Criar um algoritmo que leia valores para uma matriz M2x2. Calcular e imprimir o
 #determinante. Para cálculo do determinante de uma matriz de ordem 2, é simplesmente
