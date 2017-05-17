@@ -6,7 +6,7 @@
 # Frederico Victor Alfaia Rodrigues  1515200030
 # André Luis Laborda neves           1515070006
 # Diego Reis Figueira                1515070169
-# Diogo Duarte
+# Luis Gustavo Moura de Queiroz      1715310037
 #
 # Criar um algoritmo que leia os elementos de uma matriz inteira 10 x 10 e escreva
 # somente os elementos acima da diagonal secundária.
