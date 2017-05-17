@@ -68,8 +68,8 @@ for i in range (n):
     inamps = 0.08 * matriz[i][1] 
     faltas = (matriz[i][5] * matriz[i][1])/160
     impren = salbruto * 0.08
-    destot = faltas + INAMPS + impren + matriz[i][6] + matriz[i][7] + matriz[i][8]
-    salliq = salbruto - INAMPS - faltas
+    destot = faltas + inamps + impren + matriz[i][6] + matriz[i][7] + matriz[i][8]
+    salliq = salbruto - inamps - faltas
     
     print("--//--//--//--//--//--//--//--//--//--//--//--")
     print("funcionário", n)
