@@ -1,16 +1,15 @@
 # ----------------------------------------------------------------------------------------------------------------------
-# IntroduÃ§Ã£o a ProgramaÃ§Ã£o de Computadores - IPC
+# Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Gabriel barroso da Silva Lima      1715310011
-# Frederico Victor Alfaia Rodrigues  1515200030
-# AndrÃ© Luis Laborda neves           1515070006
-# Diego Reis Figueira                1515070169
+# Gabriel barroso da Silva Lima                      1715310011
+# Frederico Victor Alfaia Rodrigues                  1515200030
+# André Neves
+# Diego Figueira
 # Diogo Duarte
 #
 # Criar um algoritmo que leia uma matriz ANxN (N <= 10) e verifique (informe) se tal
-# matriz Ã© ou nÃ£o simÃ©trica (At = A).
-
+# matriz é ou não simétrica (At = A).
 
 matriz = []
 N = int(input())
@@ -44,8 +43,8 @@ while i < N:
     
 if i == N:
     
-    print("Matriz simÃ©trica")
+    print("Matriz simétrica")
     
 else:
     
-    print("Matriz nÃ£o simÃ©trica")
+    print("Matriz não simétrica")
