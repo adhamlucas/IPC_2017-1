@@ -1,15 +1,15 @@
 # ----------------------------------------------------------------------------------------------------------------------
-# IntroduÁ„o a ProgramaÁ„o de Computadores - IPC
+# Introdu√ß√£o a Programa√ß√£o de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Gabriel barroso da Silva Lima                      1715310011
-# Frederico Victor Alfaia Rodrigues                  1515200030
-# AndrÈ Neves
-# Diego Figueira
+# Gabriel barroso da Silva Lima      1715310011
+# Frederico Victor Alfaia Rodrigues  1515200030
+# Andr√© Luis Laborda neves           1515070006
+# Diego Reis Figueira                1515070169
 # Diogo Duarte
 #
 # Criar um algoritmo que leia os elementos de uma matriz inteira 10 x 10 e escreva
-# somente os elementos acima da diagonal secund·ria.
+# somente os elementos acima da diagonal secund√°ria.
 
 matriz = []
 
