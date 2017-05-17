@@ -13,4 +13,21 @@
 # elementos da diagonal principal.
 #-----------------------------------------------------------------------------------------------------------------------
 
+matriz=[]
+a=0
+n_linhas = 10
+n_colunas = 10
+for i in range(n_linhas):
+    linha = []
+    for j in range(n_colunas):
+        a=j+3 +a
+        linha.append(a)
+    matriz.append(linha)
+    print(linha)
 
+f=len(linha)
+g=len(matriz)
+for c in range(g):
+    for d in range(f):
+        if c==d:
+            print(matriz[c][d], end=" ")
