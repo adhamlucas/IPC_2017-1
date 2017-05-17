@@ -79,7 +79,7 @@ for i in range (n):
     print("salário bruto:", salbruto)
     print("...........................")
     print("Descontos efetuados")
-    print("INAMPS:", INAMPS)
+    print("INAMPS:", inamps)
     print("faltas:", faltas)
     print("imposto de renda:", impren)
     print("descontos totais:", destot)
