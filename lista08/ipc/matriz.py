@@ -1,3 +1,3 @@
-# Bibliotecas de funções para as matrizes
+# Biblioteca de funções para as matrizes
 
-import python
+import random
