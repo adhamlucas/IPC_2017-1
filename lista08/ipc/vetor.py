@@ -3,10 +3,6 @@
 import random
 
 # lista 1 questão 1
-# Edson de Lima Barros   1715310043
-# Tiago Ferreira Aranha  1715310047
-# Vitor Simôes Azevedo   1715310025
-
 def imprimir_questao1(n):
     res = ""
     c = 1
@@ -16,6 +12,14 @@ def imprimir_questao1(n):
         c += 1
 
     return res
+
+# lista 1 questao 10
+# função que sorteia valores com dois dados
+def jogar_dados():
+    dados = [random.randint(1, 6), random.randint(1, 6)]
+    dados = dados[0] + dados[1]
+    return dados
+
 
 # função para retornar uma lista a partir de uma entrada em sequência
 # Ex.: Em um input: 4 10 PM, retornará a lista: ['4', '10', 'PM']
