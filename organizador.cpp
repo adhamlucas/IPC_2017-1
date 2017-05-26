@@ -78,13 +78,7 @@ int main() {
         for (int j = 1; j <= qtd_questao; j++) {
             int questao_id;
             cin >> questao_id;
-            double dificuldade = 0.0;
-            // Gambiarra:
-            if (j != questao_id) {
-                dificuldade = 10.0;
-            } else {
-                dificuldade = (1.0*questao_id/qtd_questao)*5;
-            }
+            double dificuldade = (1.0*questao_id/qtd_questao);
             questoes.emplace_back(lista_id, questao_id, dificuldade);
         }
     }
@@ -96,6 +90,8 @@ int main() {
     for (int grupo_id = 1; grupo_id <= qtd_grupo; grupo_id++) {
         grupos.emplace_back(Grupo(grupo_id));
     }
+
+    srand(time(0));
     random_shuffle(grupos.begin(), grupos.end());
     for (auto questao : questoes) {
         int i = indiceMenorDificuldade(grupos);
