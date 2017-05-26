@@ -2,6 +2,7 @@
 
 import random
 
+
 # lista 1 questão 1
 def imprimir_questao1(n):
     res = ""
@@ -12,6 +13,7 @@ def imprimir_questao1(n):
         c += 1
 
     return res
+
 
 # lista 1 questao 10
 # função que sorteia valores com dois dados
@@ -41,3 +43,47 @@ def get_as_uri_inteiros(valores):
         valores_int.append(int(i))
 
     return valores_int
+
+
+# usada na lista 2 questão 22
+# função para criar vetor de tamanho n
+def cria_vetor(n):
+    vetor = []
+    for j in range(n):
+        # serão inseridos valores aleatórios na matriz (entre 1 e 4)
+        value = random.rand(1, 4)
+        vetor.append(value)
+    return vetor
+
+
+# função que gera números decimais aleatórios entre n e n
+def gera_aleatorio_float(n, m):
+    res = float('%2.1f' % (random.random() * random.randint(n, m)))
+    return res
+
+
+# função para criar vetor de tamanho n
+def cria_vetor_numeros_decimais(n):
+    vetor = []
+    for j in range(n):
+        # serão inseridos valores aleatórios na matriz (entre 1 e 4)
+        value = gera_aleatorio_float(1, 4)
+        vetor.append(value)
+    return vetor
+
+
+# função que encontra o maior elemento em um vetor
+def maior_valor_do_vetor(vetor):
+    maior = vetor[0]
+    for i in vetor:
+        if i > maior:
+            maior = i
+    return maior
+
+
+# função que divide todos os elementos de um vetor por um número
+def divide_todos_por_numero(vetor, numero):
+    novo_vetor = []
+    for i in vetor:
+        novo_vetor.append("%2.3f" % (i / numero))
+    return novo_vetor
