@@ -31,3 +31,14 @@ def cria_matriz_quadrada(n):
 def imprime_matriz(matriz):
     for i in matriz:
         print(i)
+
+
+# função que pultiplica cada elemento da matriz por um número n e retorna um vetor
+def multiplica_matriz_por_inteiro(matriz, n):
+    vetor = []
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz)):
+            vetor.append(matriz1[i][j] * n)
+
+    return vetor

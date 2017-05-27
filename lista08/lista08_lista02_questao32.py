@@ -15,15 +15,22 @@
 
 from lista08.ipc import vetor, matriz
 
-matriz1 = matriz.cria_matriz(6, 6)
+matriz1 = matriz.cria_matriz_quadrada(6)
+
+print(matriz1)
 
 
 # função que pultiplica cada elemento da matriz por um número n e retorna um vetor
 def multiplica_matriz_por_inteiro(matriz, n):
-    for i in range(len(matriz)):
-        print(i)
-        for j in range(len(matriz)):
-            print(j)
+    vetor = []
 
-print(matriz1)
-multiplica_matriz_por_inteiro(matriz1,0)
+    for i in range(len(matriz)):
+        for j in range(len(matriz)):
+            vetor.append(matriz1[i][j] * n)
+
+    return vetor
+
+
+vetor = multiplica_matriz_por_inteiro(matriz1, 2)
+
+print(vetor)
