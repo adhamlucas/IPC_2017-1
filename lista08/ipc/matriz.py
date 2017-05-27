@@ -39,6 +39,6 @@ def multiplica_matriz_por_inteiro(matriz, n):
 
     for i in range(len(matriz)):
         for j in range(len(matriz)):
-            vetor.append(matriz1[i][j] * n)
+            vetor.append(matriz[i][j] * n)
 
     return vetor
