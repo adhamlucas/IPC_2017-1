@@ -80,7 +80,8 @@ def maior_valor_do_vetor(vetor):
             maior = i
     return maior
 
-# função que retorna o menor elemento em um vetor
+
+# função que  retorna o menor elemento em um vetor
 def menor_valor_do_vetor(vetor):
     menor = vetor[0]
     for i in vetor:
