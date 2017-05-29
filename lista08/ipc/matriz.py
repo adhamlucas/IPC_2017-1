@@ -59,6 +59,17 @@ def maior_da_diagonal_principal(matriz):
     return maior
 
 
+# função que retorna um vetor com os elementos da diagonal principal
+
+def diagonal_principal(matriz):
+    vetor = []
+    for i, n in enumerate(matriz):
+        for j, m in enumerate(n):
+            if i == j:
+                vetor.append(matriz[i][j])
+    return vetor
+
+
 # função que retorna um vetor com os elementos da diagonal secundária
 
 def diagonal_secundaria(matriz):
@@ -69,3 +80,32 @@ def diagonal_secundaria(matriz):
         secundaria.append(matriz[i][j])
         j -= 1
     return secundaria
+
+
+# função que retorna a média dos elementos da diagonal principal
+
+def media_diagonal_principal(matriz):
+    vetor = []
+    soma = 0
+    c = 0
+
+    for i, n in enumerate(matriz):
+        for j, m in enumerate(n):
+            if i == j:
+                soma += matriz[i][j]
+                c += 1
+    return soma / c
+
+
+# função que retorna a média dos elementos da diagonal secundária
+
+def media_diagonal_secundaria(matriz):
+    ordem = len(matriz)
+    j = ordem - 1
+    soma = 0
+    c = 0
+    for i in range(ordem):
+        soma += matriz[i][j]
+        j -= 1
+        c += 1
+    return soma / c
