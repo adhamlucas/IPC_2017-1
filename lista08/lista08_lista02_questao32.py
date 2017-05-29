@@ -5,7 +5,8 @@
 # Edson de Lima Barros   1715310043
 # Tiago Ferreira Aranha  1715310047
 # Vitor Simôes Azevedo   1715310025
-#
+# Uriel Brito Barros     1515120558
+
 # 32. Faça um procedimento que recebe, por parâmetro, uma matriz M(6,6) e um valor A .
 #
 # O procedimento deve multiplicar cada elemento de M por A e armazenar em um vetor V(36).
