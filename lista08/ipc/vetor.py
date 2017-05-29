@@ -72,7 +72,7 @@ def cria_vetor_numeros_decimais(n):
     return vetor
 
 
-# função que retorna o maior elemento em um vetor
+# função que retorna  o maior elemento em um vetor
 def maior_valor_do_vetor(vetor):
     maior = vetor[0]
     for i in vetor:
