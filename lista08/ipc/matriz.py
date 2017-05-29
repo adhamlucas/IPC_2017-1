@@ -42,3 +42,15 @@ def multiplica_matriz_por_inteiro(matriz, n):
             vetor.append(matriz[i][j] * n)
 
     return vetor
+
+
+# lista 2 questão 28
+# função que exibe o maior elemento da diagonal principal
+def maior_da_diagonal_principal(matriz):
+    maior = matriz[0][0]
+    for i, n in enumerate(matriz):
+        for j, m in enumerate(n):
+            if i == j:
+                if j > maior:
+                    maior = j
+    return maior
