@@ -90,6 +90,7 @@ def divide_todos_por_numero(vetor, numero):
 
 # lista 2 questão 17
 # função que retorna a diferença entre dois vetores de inteiros
+
 def vetor_diferenca(vetor1, vetor2):
     vetor = []
 
@@ -97,3 +98,16 @@ def vetor_diferenca(vetor1, vetor2):
         vetor.append(i - j)
 
     return vetor
+
+
+# lista 2 questão 18
+# função que retorna a soma de dois vetores de inteiros
+
+def vetor_soma(vetor1, vetor2):
+    vetor = []
+
+    for i, j in zip(vetor1, vetor2):
+        vetor.append(i + j)
+
+    return vetor
+
