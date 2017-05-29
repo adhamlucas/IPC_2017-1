@@ -12,10 +12,12 @@
 # e retorne o menor valor dos elementos acima da diagonal secundária.
 
 
-from lista08.ipc import matriz
+from lista08.ipc import matriz, vetor
 
-matriz1 = matriz.cria_matriz(8, 8)
+matriz1 = matriz.cria_matriz_quadrada(3)
 
-menor_da_diagonal = matriz.menor_da_diagonal_secundaria(matriz1)
+diagonal_secundaria = matriz.diagonal_secundaria(matriz1)
 
-print(menor_da_diagonal)
+menor_da_diagonal_secundaria = vetor.menor_valor_do_vetor(diagonal_secundaria)
+
+print(menor_da_diagonal_secundaria)
