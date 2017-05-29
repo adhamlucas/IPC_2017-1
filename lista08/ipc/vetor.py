@@ -72,13 +72,21 @@ def cria_vetor_numeros_decimais(n):
     return vetor
 
 
-# função que encontra o maior elemento em um vetor
+# função que retorna o maior elemento em um vetor
 def maior_valor_do_vetor(vetor):
     maior = vetor[0]
     for i in vetor:
         if i > maior:
             maior = i
     return maior
+
+# função que retorna o menor elemento em um vetor
+def menor_valor_do_vetor(vetor):
+    menor = vetor[0]
+    for i in vetor:
+        if i < menor:
+            menor = i
+    return menor
 
 
 # função que divide todos os elementos de um vetor por um número
@@ -110,4 +118,3 @@ def vetor_soma(vetor1, vetor2):
         vetor.append(i + j)
 
     return vetor
-
