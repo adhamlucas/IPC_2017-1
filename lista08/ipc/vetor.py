@@ -51,7 +51,7 @@ def cria_vetor(n):
     vetor = []
     for j in range(n):
         # serão inseridos valores aleatórios na matriz (entre 1 e 4)
-        value = random.rand(1, 4)
+        value = random.randint(1, 4)
         vetor.append(value)
     return vetor
 
@@ -87,3 +87,13 @@ def divide_todos_por_numero(vetor, numero):
     for i in vetor:
         novo_vetor.append("%2.3f" % (i / numero))
     return novo_vetor
+
+# lista 2 questão 17
+# função que retorna a diferença entre dois vetores de inteiros
+def vetor_diferenca(vetor1, vetor2):
+    vetor = []
+
+    for i, j in zip(vetor1, vetor2):
+        vetor.append(i - j)
+
+    return vetor
