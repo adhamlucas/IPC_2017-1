@@ -59,36 +59,13 @@ def maior_da_diagonal_principal(matriz):
     return maior
 
 
-# lista 2 questão 42
-# função que retorna o menor elemento da diagonal secundária
+# função que retorna um vetor com os elementos da diagonal secundária
 
-def menor_da_diagonal_secundaria(matriz):
-    menor = matriz[0][0]
-    for i, n in enumerate(matriz):
-        for j, m in enumerate(n):
-            if i < j:
-                if j < menor:
-                    menor = j
-    return menor
-
-# função que retorna a média aritmética dos elementos abaixo da diagonal principal
-def media_elementos_abaixo_diagonal_principal(matriz):
-    soma = 0
-    cont = 0
-    for i, n in enumerate(matriz):
-        for j, m in enumerate(n):
-            if i > j:
-                soma += m
-                cont += 1
-    return soma / cont
-
-# função que retorna a soma dos elementos acima da diagonal principal
-def soma_elementos_acima_diagonal_principal(matriz):
-    soma = 0
-    cont = 0
-    for i, n in enumerate(matriz):
-        for j, m in enumerate(n):
-            if i < j:
-                soma += m
-                cont += 1
-    return soma / cont
+def diagonal_secundaria(matriz):
+    ordem = len(matriz)
+    j = ordem - 1
+    secundaria = []
+    for i in range(ordem):
+        secundaria.append(matriz[i][j])
+        j -= 1
+    return secundaria
