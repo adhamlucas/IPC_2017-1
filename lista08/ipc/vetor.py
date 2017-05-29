@@ -90,12 +90,23 @@ def menor_valor_do_vetor(vetor):
     return menor
 
 
+# função que  retorna a média dos elementos
+
+def media_dos_valores_do_vetor(vetor):
+    soma = 0
+    for i in vetor:
+        soma += i
+
+    return soma / len(vetor)
+
+
 # função que divide todos os elementos de um vetor por um número
 def divide_todos_por_numero(vetor, numero):
     novo_vetor = []
     for i in vetor:
         novo_vetor.append("%2.3f" % (i / numero))
     return novo_vetor
+
 
 # lista 2 questão 17
 # função que retorna a diferença entre dois vetores de inteiros
