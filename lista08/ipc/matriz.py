@@ -2,6 +2,7 @@
 
 import random
 
+
 # função para criar matriz de ordem n x m
 def cria_matriz(n, m):
     matriz = []
@@ -13,6 +14,7 @@ def cria_matriz(n, m):
             list.append(value)
         matriz.append(list)
     return matriz
+
 
 # função para criar matriz quadrada de ordem n
 def cria_matriz_quadrada(n):
@@ -45,7 +47,8 @@ def multiplica_matriz_por_inteiro(matriz, n):
 
 
 # lista 2 questão 28
-# função que exibe o maior elemento da diagonal principal
+# função que retorna o maior elemento da diagonal principal
+
 def maior_da_diagonal_principal(matriz):
     maior = matriz[0][0]
     for i, n in enumerate(matriz):
@@ -54,3 +57,16 @@ def maior_da_diagonal_principal(matriz):
                 if j > maior:
                     maior = j
     return maior
+
+
+# lista 2 questão 42
+# função que retorna o menor elemento da diagonal secundária
+
+def menor_da_diagonal_secundaria(matriz):
+    menor = matriz[0][0]
+    for i, n in enumerate(matriz):
+        for j, m in enumerate(n):
+            if i < j:
+                if j < menor:
+                    menor = j
+    return menor
