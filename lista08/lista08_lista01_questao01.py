@@ -5,7 +5,7 @@
 # Edson de Lima Barros   1715310043
 # Tiago Ferreira Aranha  1715310047
 # Vitor Simôes Azevedo   1715310025
-#
+# Fang Yao               1115180236
 # Faça um programa para imprimir:
 #    1
 #    2   2
