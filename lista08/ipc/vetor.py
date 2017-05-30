@@ -14,7 +14,7 @@ def imprimir_questao1(n):
 
     return res
 # lista 1 questao 2
-def triangulo(n):
+def SequencialAbaixoDiagonalPrincipal(n):
     res = ""
     for i in range(n):
         for j in range(i+1):
