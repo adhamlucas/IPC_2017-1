@@ -13,7 +13,14 @@ def imprimir_questao1(n):
         c += 1
 
     return res
-
+# lista 1 questao 2
+def triangulo(n):
+    res = ""
+    for i in range(n):
+        for j in range(i+1):
+            res += (str(j + 1) + " ")
+        res += "\n"
+    return res
 
 # lista 1 questao 10
 # função que sorteia valores com dois dados
