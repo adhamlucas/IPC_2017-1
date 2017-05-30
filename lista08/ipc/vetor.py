@@ -13,14 +13,18 @@ def imprimir_questao1(n):
         c += 1
 
     return res
+
+
 # lista 1 questao 2
+
 def SequencialAbaixoDiagonalPrincipal(n):
     res = ""
     for i in range(n):
-        for j in range(i+1):
+        for j in range(i + 1):
             res += (str(j + 1) + " ")
         res += "\n"
     return res
+
 
 # lista 1 questao 10
 # função que sorteia valores com dois dados
@@ -127,6 +131,13 @@ def vetor_diferenca(vetor1, vetor2):
     return vetor
 
 
+# lista 2 questão 16
+# função que retorna a intersecção entre dois vetores de inteiros
+
+def vetor_interseccao(vetor1, vetor2):
+    return list(set(vetor1) & set(vetor2))
+
+
 # lista 2 questão 18
 # função que retorna a soma de dois vetores de inteiros
 
@@ -135,5 +146,16 @@ def vetor_soma(vetor1, vetor2):
 
     for i, j in zip(vetor1, vetor2):
         vetor.append(i + j)
+
+    return vetor
+
+# lista 2 questão 19
+# função que retorna o produto de dois vetores de inteiros
+
+def vetor_produto(vetor1, vetor2):
+    vetor = []
+
+    for i, j in zip(vetor1, vetor2):
+        vetor.append(i * j)
 
     return vetor
