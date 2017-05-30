@@ -35,6 +35,45 @@ def imprime_matriz(matriz):
         print(i)
 
 
+# função para imprimir os índices de uma matriz de qualquer ordem
+def imprime_matriz_indices(matriz):
+    for i in range(len(matriz)):
+        for j in range(len(matriz[0])):
+            print("%d%d" % (i, j), end=" ")
+        print()
+
+
+# lista 1 questão 3
+# função para imprimir retângulo com uma matriz
+def imprime_retagulo_matriz(matriz):
+    for i in range(len(matriz)):
+
+        for j in range(len(matriz[0])):
+
+            largura = len(matriz[i]) - 1
+            altura = len(matriz) - 1
+
+            if (j == 0 and i == altura) or (j == largura and i == 0) or (i == altura and i == 0) or (
+                            i == 0 and j == 0) or (
+                            i == altura and j == largura):
+                caractere = "+"
+            elif (j == largura):
+                caractere = "|"
+            elif (i == 0):
+                caractere = "-"
+            elif (j == 0):
+                caractere = "|"
+            elif (i == altura):
+                caractere = "-"
+
+            else:
+                caractere = " "
+
+            print("%s" % (caractere), end=" ")
+
+        print()
+
+
 # função que pultiplica cada elemento da matriz por um número n e retorna um vetor
 def multiplica_matriz_por_inteiro(matriz, n):
     vetor = []
