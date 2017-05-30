@@ -19,8 +19,6 @@
 
 from lista08.ipc import vetor
 
-qtd = int(input("Informe a quantidade: "))
+n = int(input("quantidade "))
+resposta = exercicio_1(n)
 
-resposta  = vetor.imprimir_questao1(qtd)
-
-print(resposta)
