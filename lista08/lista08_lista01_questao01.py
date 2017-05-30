@@ -2,10 +2,14 @@
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
-# Edson de Lima Barros   1715310043
-# Tiago Ferreira Aranha  1715310047
-# Vitor Simôes Azevedo   1715310025
-# Fang Yao               1115180236
+# Fang Yao                           1115180236
+# Enrique leão Barbosa               1715310048
+# Hugo Thadeu Silva Cardoso          1715310013
+# Victor Summer Oliveira             1715310042
+# Wilbert Luis Evangelista Marins    1715310055
+# Guilherme Silva de Oliveira        1715310034
+
+
 # Faça um programa para imprimir:
 #    1
 #    2   2
