@@ -203,21 +203,14 @@ def criar_vetor_primo(vetor):
 #lista02_questao21
 #receber um vetor e compactá-lo, eliminando números nulos e negativos
 def compactar (vetor):
-    
     contador = 0
     compactados = 0
-    
     while (contador < 100 - compactados):
-        
         if vetor[contador] <= 0:
-            
             vetor.remove(vetor[contador])
             compactados += 1
-        
         else:
-		
-			contador += 1
-    
+            contador += 1
     return vetor;
 
 #lista02_questao44
@@ -273,3 +266,29 @@ def gera_primos():
 # lista 2 questao 15
 def junta_e_ordena(a, b):
     return sorted(a+b)[::-1]
+
+# lista 2 questão 1
+def le_dados():
+    dados = []
+    while 1:
+        try:
+            dado = input().split()
+            dados.append({
+                "sexo": dado[0],\
+                "olhos_cor": dado[1],\
+                "cabelos_cor": dado[2],\
+                "idade": int(dado[3])})
+        except EOFError:
+            return dados
+
+def crivo_de_dados(dados):
+    max_idade = 0
+    qtd_selecionado = 0
+    for dado in dados:
+        max_idade = max(max_idade, dado["idade"])
+        if dado["sexo"] == "F" and\
+           18 <= dado["idade"] <= 35 and\
+           dado["olhos_cor"] == "verde" and\
+           dado["cabelos_cor"] == "louro":
+            qtd_selecionado += 1
+    return [max_idade, qtd_selecionado]
