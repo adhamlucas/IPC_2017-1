@@ -166,3 +166,10 @@ def funcao_minimax(mat):
            maior = maior_aux
    return minimax
 
+# lista02_questao36 função que retorna a soma da multiplica linha por diagonal #
+def multiplica_linha(mat):
+   for i in range(6):
+       di = mat[i][i]
+       for j in range(6):
+           mat[i][j] *= di
+   return mat
