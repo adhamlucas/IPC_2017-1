@@ -306,4 +306,14 @@ def soma_diagonais(matriz):
 
     return soma
 
+# lista 2 questão 29
+def produto_matriz(matriz1, matriz2):
+    matrizvirgem = []
+    for i in range(len(matriz1)):
+        vetbranco = []
+        for j in range(len(matriz2[0])):
+            vetbranco.append((matriz1[i][0] * matriz2[0][j]) + (matriz1[i][1] * matriz2[1][j]))
+        matrizvirgem.append(vetbranco)
+    return matrizvirgem
+
 
