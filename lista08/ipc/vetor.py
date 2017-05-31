@@ -121,6 +121,9 @@ def divide_todos_por_numero(vetor, numero):
 
 # lista 2 questão 17
 # função que retorna a diferença entre dois vetores de inteiros
+#
+# *A diferença entre vetor1 e vetor2 é o conjunto formado pelos
+# elementos que pertencem ao vetor1 e não pertencem a vetor2.
 
 def diferenca(vetor1, vetor2):
 
