@@ -122,13 +122,17 @@ def divide_todos_por_numero(vetor, numero):
 # lista 2 questão 17
 # função que retorna a diferença entre dois vetores de inteiros
 
-def vetor_diferenca(vetor1, vetor2):
-    vetor = []
+def diferenca(vetor1, vetor2):
 
-    for i, j in zip(vetor1, vetor2):
-        vetor.append(i - j)
+    vetor_diferenca = []
+    tam = len(vetor1)
 
-    return vetor
+    for i in range(tam):
+        if vetor2.count(vetor1[i]) == 0:
+            if vetor_diferenca.count(vetor1[i]) == 0:
+                vetor_diferenca.append(vetor1[i])
+
+    return vetor_diferenca
 
 
 # lista 2 questão 16
