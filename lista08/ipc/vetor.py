@@ -155,3 +155,28 @@ def vetor_produto(vetor1, vetor2):
         vetor.append(i * j)
 
     return vetor
+
+# lista02_questao20
+# Faça um procedimento que receba, por parâmetro,
+#  um vetor K(15)
+def criar_vetor_tamanho15():
+    vetor = []
+    
+    for x in range(15):
+        vetor.append(float(input('Digite o %dº valor: ' % (x + 1))))
+    
+    return vetor
+#lista02_questao20
+#retorna um vetor P com os números primos do vetor pasado como argumento
+def criar_vetor_primo(vetor):
+    P = []
+    
+    for x in(vetor):
+        divisores = 0
+        for i in range(1, int(x) + 1):
+            if x % i == 0:
+                divisores += 1
+        if divisores == 2:
+            P.append(x)
+    
+    return P
