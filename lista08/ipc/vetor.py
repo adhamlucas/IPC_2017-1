@@ -249,3 +249,27 @@ def soma_vetor(vet):
     for x in vet:
         soma+=x
     return soma
+
+# lista 2 questao 14
+def eh_primo(n):
+    qtd_divisores = 0
+    for i in range(1, n+1):
+        if n%i == 0:
+            qtd_divisores += 1
+    if qtd_divisores == 2:
+        return True
+    else:
+        return False
+
+def gera_primos():
+    primos = []
+    i = 101
+    while len(primos) < 10:
+        if eh_primo(i):
+            primos.append(i)
+        i += 1
+    return primos
+        
+# lista 2 questao 15
+def junta_e_ordena(a, b):
+    return sorted(a+b)[::-1]
