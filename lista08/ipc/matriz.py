@@ -252,3 +252,37 @@ def soma_acima_diagonal_principal(matriz):
         for j in range(i+1, m):
             soma += matriz[i][j]
     return soma
+
+# funcao que retorna a soma dos elementos
+
+def soma_elementos_matriz(matriz):
+    acumulador = 0
+    for i in matriz:
+        for j in i:
+            acumulador += j
+    return acumulador
+
+
+# lista 2 questão 26
+
+def soma_linha5_coluna3(matriz):
+    soma = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[0])):
+
+            if i == 4 or j == 2:
+                soma += matriz[i][j]
+    return soma
+
+
+# função que cria matriz zerada
+def cria_matriz_zerada(n, m):
+    matriz = []
+    linha = []
+    for i in range(n):
+        linha.append(0 * m)
+        matriz.append(linha)
+    return matriz
+
+
