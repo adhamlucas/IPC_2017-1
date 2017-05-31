@@ -63,6 +63,15 @@ def fat(n):
         n -= 1
     return f
 
+#lista02_questao13
+def criar_vetor_tamanho25():
+    vetor = []
+    
+    for x in range(25):
+        vetor.append(float(input('Digite o %dº valor: ' % (x + 1))))
+    
+return vetor
+
 
 # usada na lista 2 questão 22
 # função para criar vetor de tamanho n
@@ -267,6 +276,23 @@ def gera_primos():
 def junta_e_ordena(a, b):
     return sorted(a+b)[::-1]
 
+#  lista02_Questao23 vetor que gera uma quantidade de filmes alugados para cada cliente
+def cria_registro_locadora(n):
+    vetor = []
+    for j in range(n):
+        # serão inseridos valores aleatórios na matriz
+        value = random.randint(0,50)
+        vetor.append(value)
+    return vetor
+
+
+# lista02_Questao23 vetor que retorna a quantidade de filmes gratuitos
+def quantidade_gratuita(vetor):
+    vetor1 =[]
+    for i in vetor:
+        vetor1.append(i // 15)
+    return vetor1
+
 # lista 2 questão 1
 def le_dados():
     dados = []
@@ -281,6 +307,7 @@ def le_dados():
         except EOFError:
             return dados
 
+# lista 2 questão 2
 def crivo_de_dados(dados):
     max_idade = 0
     qtd_selecionado = 0
