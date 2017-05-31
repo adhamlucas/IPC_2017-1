@@ -11,14 +11,13 @@
 #32.Faça um procedimento que recebe, por parâmetro, uma matriz M(6,6) e um valor A . O procedimento deve multiplicar cada
 # elemento de M por A e armazenar em um vetor V(36). O vetor V deve retornar por parâmetro.
 #-----------------------------------------------------------------------------------------------------------------------
-import random
 def matriz_mult(x,y):
     A = int(input())
     matriz = []
     for i in range(x):
         linha = []
         for j in range(y):
-            linha.append(random.randint(1,1) * A)
+            linha.append(int(input()) * A)
         matriz.append(linha)
 
     return matriz
