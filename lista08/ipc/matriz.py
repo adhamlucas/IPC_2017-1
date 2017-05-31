@@ -206,3 +206,14 @@ def menor_item_secundaria(matriz):
     menor = min(secundaria)
 
     return menor
+
+
+def diferenca_m_por_n(A, B, C):
+
+    C = 4*[6*[None]]
+
+    for i in range(4):
+        for j in range(6):
+            C[i][j] = A[i][j] - B[j][i]
+
+    return C
