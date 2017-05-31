@@ -8,8 +8,8 @@
 # Victor Summer Oliveira             1715310042
 # Wilbert Luis Evangelista Marins    1715310055
 # Guilherme Silva de Oliveira        1715310034
-# Faça uma função que recebe a idade de uma pessoa em anos, meses e dias e retorna essa idade expressa em dias.
-
+# Faça um procedimento que recebe 2 vetores A e B de tamanho 10 de inteiros, por parâmetro. Ao final do procedimento B 
+#deve conter o fatorial de cada elemento de A. O vetor B deve retornar alterado. 
 
 from lista08.ipc import vetor
 a1, a2, a3, a4, a5, a6, a7, a8, a9, a10 = input("Digite os valores: ").split()
