@@ -8,7 +8,7 @@
 # Marcus Vinicius Paes da Silva Santos          1515070060
 # Ulisses Antonio Antonino da Costa             1515090555
 
--------------------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------
 
 #Reverso do número. Faça uma função que retorne o reverso de um número inteiro informado. Por exemplo: 127 -> 721.
 
