@@ -21,6 +21,10 @@ def SequencialAbaixoDiagonalPrincipal(n):
         res += "\n"
     return res
 
+# lista 1 questão 10
+# função que recebe 3 argumentos e retorna a soma deles
+def somar_tres(a,b,c):
+    return (a+b+c)
 
 # lista 1 questao 10
 # função que sorteia valores com dois dados
