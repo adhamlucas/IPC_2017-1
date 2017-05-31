@@ -63,6 +63,15 @@ def fat(n):
         n -= 1
     return f
 
+#lista02_questao13
+def criar_vetor_tamanho25():
+    vetor = []
+    
+    for x in range(25):
+        vetor.append(float(input('Digite o %dº valor: ' % (x + 1))))
+    
+return vetor
+
 
 # usada na lista 2 questão 22
 # função para criar vetor de tamanho n
