@@ -34,6 +34,32 @@ def imprime_matriz(matriz):
     for i in matriz:
         print(i)
 
+        
+#função para multiplicar duas matrizes(matriz A e matriz B) e retornar a matriz resultante(matriz AxB)
+def produto_matricial(matriz1, matriz2):
+
+    matriz_result = []
+
+    linhas = len(matriz1)
+    colunas = len(matriz2[0])
+
+    # verifica se o numero de colunas de A
+    # é igual ao número de linhas de B
+    if (len(matriz1[0])) == (len(matriz2)):
+
+        for i in range(linhas):
+            matriz_result.append([])
+            for j in range(colunas):
+                value = 0
+                for aux in range(len(matriz2)):
+                    value += matriz1[i][aux] * matriz2[aux][j]
+
+                matriz_result[i].append(value)
+
+        return matriz_result
+
+    else:
+        return 'O produto não é possível'
 
 # função para imprimir os índices de uma matriz de qualquer ordem
 def imprime_matriz_indices(matriz):
