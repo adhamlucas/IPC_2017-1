@@ -19,7 +19,7 @@
 # Use uma função que receba um valor n inteiro imprima até a n-ésima linha.
 #---------------------------------------------------------------------------
 
-from ipc import vetor
+from lista08.ipc import vetor
 
 quantidade = int(input("Digite a quantidade: "))
 resultado = vetor.SequencialAbaixoDiagonalPrincipal(quantidade)
