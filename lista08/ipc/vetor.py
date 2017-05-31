@@ -210,22 +210,17 @@ def compactar (vetor):
     return vetor;
 
 #lista02_questao44
-#receber um vetor e calcular o produto dos elementos acima da diagonal secundaria e principal
-def calcular_produtos (vetor):
+#receber uma matriz e calcular o produto dos elementos acima da diagonal secundaria e principal
+def calcular_produtos (matriz):
     
-    principal = 1
-    secundaria = 1
+    produto = 1
     
     for i in range (12):
     
         for j in range (12):
             
-            if j + i < 11:
+            if (j + i < 11) and (j > i):
                 
-                secundaria *= vetor[i][j]
-                
-            if j > i:
-                
-                principal *= vetor[i][j]
+                produto *= vetor[i][j]
     
-    return principal, secundaria;
+    return produto;
