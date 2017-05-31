@@ -3,7 +3,7 @@
 # Universidade do Estado do Amazonas - UEA
 # Prof. Jucimar Jr
 # Fang Yao                           1115180236
-# Enrique leão Barbosa               1715310048
+# Enrique leão Barbosa Izel          1715310048
 # Hugo Thadeu Silva Cardoso          1715310013
 # Victor Summer Oliveira             1715310042
 # Wilbert Luis Evangelista Marins    1715310055
