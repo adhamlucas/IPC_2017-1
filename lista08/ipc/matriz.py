@@ -286,3 +286,24 @@ def cria_matriz_zerada(n, m):
     return matriz
 
 
+
+# função que soma as diagonais
+
+def soma_diagonais(matriz):
+    vetor = []
+    soma = 0
+    c = 0
+    ordem = len(matriz)
+    j = ordem - 1
+
+    for i, n in enumerate(matriz):
+        for j, m in enumerate(n):
+            if i == j:
+                soma += matriz[i][j]
+    for i in range(ordem):
+        soma += matriz[i][j]
+        j -= 1
+
+    return soma
+
+
