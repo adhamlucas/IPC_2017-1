@@ -54,6 +54,14 @@ def get_as_uri_inteiros(valores):
         valores_int.append(int(i))
 
     return valores_int
+#lista 02 questão 06
+def fat(n):
+    f = 1
+
+    while n > 0:
+        f = f * n
+        n -= 1
+    return f
 
 
 # usada na lista 2 questão 22
