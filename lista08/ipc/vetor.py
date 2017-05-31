@@ -282,3 +282,20 @@ def gera_primos():
 # lista 2 questao 15
 def junta_e_ordena(a, b):
     return sorted(a+b)[::-1]
+
+#  lista02_Questao23 vetor que gera uma quantidade de filmes alugados para cada cliente
+def cria_registro_locadora(n):
+    vetor = []
+    for j in range(n):
+        # serão inseridos valores aleatórios na matriz
+        value = random.randint(0,50)
+        vetor.append(value)
+    return vetor
+
+
+# lista02_Questao23 vetor que retorna a quantidade de filmes gratuitos
+def quantidade_gratuita(vetor):
+    vetor1 =[]
+    for i in vetor:
+        vetor1.append(i // 15)
+    return vetor1
