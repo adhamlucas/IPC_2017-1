@@ -173,3 +173,10 @@ def multiplica_linha(mat):
        for j in range(6):
            mat[i][j] *= di
    return mat
+
+# Lista 2 questão 27 retorna o menor item da diagonal secundaria
+def menor_item_secundaria(matriz):
+    secundaria = diagonal_secundaria(matriz)
+    menor = min(secundaria)
+
+    return menor
