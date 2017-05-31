@@ -8,7 +8,7 @@
 # Victor Summer Oliveira             1715310042
 # Wilbert Luis Evangelista Marins    1715310055
 # Guilherme Silva de Oliveira        1715310034
-#
+# Luis Gustavo Moura de Queiroz      1715310037 
 
 
 # Data com mês por extenso. Construa uma função que receba uma data no formato DD/MM/AAAA e devolva uma string no formato D
