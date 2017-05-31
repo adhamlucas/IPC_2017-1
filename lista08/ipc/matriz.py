@@ -217,3 +217,38 @@ def diferenca_m_por_n(A, B, C):
             C[i][j] = A[i][j] - B[j][i]
 
     return C
+
+# lista 2 questão 26
+def soma_matriz_parcial(matriz, linha, coluna):
+    n = len(matriz)
+    m = len(matriz[0])
+    soma = 0
+    for i in range(n):
+        soma += matriz[i][coluna]
+    for j in range(m):
+        soma += matriz[linha][j]
+    return soma - matriz[linha][coluna]
+
+# lista 2 questão 39
+def soma_abaixo_diagonal_principal(matriz):
+    n = min(len(matriz), len(matriz[0]))
+    soma = 0
+    for i in range(n):
+        for j in range(i):
+            soma += matriz[i][j]
+    return soma
+
+def media_abaixo_diagonal_principal(matriz):
+    n = min(len(matriz), len(matriz[0]))
+    qtd = (n*(n-1))//2
+    return soma_abaixo_diagonal_principal(matriz)/qtd
+
+# lista 2 questão 40
+def soma_acima_diagonal_principal(matriz):
+    n = len(matriz)
+    m = len(matriz[0])
+    soma = 0
+    for i in range(n):
+        for j in range(i+1, m):
+            soma += matriz[i][j]
+    return soma
