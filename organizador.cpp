@@ -9,9 +9,8 @@ struct Questao {
         lista_id(lista_id), questao_id(questao_id), dificuldade(dificuldade)
     {}
     void mostraInfo() {
-        string lista = to_string(this->lista_id);
-        string questao = to_string(this->questao_id);
-        cout << "Lista " << lista << ", questão " << questao << endl;
+        string info = "Lista "+this->lista_id+", questão "+this->questao_id;
+        cout << info << endl;
     }
 };
 
@@ -41,7 +40,8 @@ struct Grupo {
     }
     void mostraInfo() {
         sort(this->questoes.begin(), this->questoes.end(), questaoPorLista);
-        cout << "Grupo " << this->grupo_id << ":\n";
+        string info = "Grupo "+this->grupo_id+":";
+        cout << info << endl;
         for (auto questao : this->questoes) {
             questao.mostraInfo();
         }
