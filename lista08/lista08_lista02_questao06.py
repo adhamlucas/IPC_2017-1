@@ -8,6 +8,8 @@
 # Victor Summer Oliveira             1715310042
 # Wilbert Luis Evangelista Marins    1715310055
 # Guilherme Silva de Oliveira        1715310034
+# Luis Gustavo Moura de Queiroz      1715310037
+
 # Faça um procedimento que recebe 2 vetores A e B de tamanho 10 de inteiros, por parâmetro. Ao final do procedimento B 
 #deve conter o fatorial de cada elemento de A. O vetor B deve retornar alterado. 
 
