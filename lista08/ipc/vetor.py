@@ -242,3 +242,10 @@ def quantidade_de_pares(vet):
         if i % 2 !=0 or i==1:
             pares +=1
     return pares
+
+# 10. Faça uma função que recebe um vetor X(20) de reais , por parâmetro, e retorna a soma dos elementos de X.
+def soma_vetor(vet):
+    soma=0
+    for x in vet:
+        soma+=x
+    return soma
