@@ -148,3 +148,21 @@ def media_diagonal_secundaria(matriz):
         j -= 1
         c += 1
     return soma / c
+
+# lista02_questao37 função que retorna o minimax de uma matriz #
+def funcao_minimax(mat):
+   minimax = mat[0][0]
+   maior = mat[0][0]
+   for i in range(10):
+       menor = mat[i][0]
+       maior_aux = maior
+       for j in range(10):
+           if mat[i][j] > maior_aux:
+               maior_aux = mat[i][j]
+           if mat[i][j] < menor:
+               menor = mat[i][j]
+       if maior_aux > maior:
+           minimax = menor
+           maior = maior_aux
+   return minimax
+
