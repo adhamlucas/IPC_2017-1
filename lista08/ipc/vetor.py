@@ -235,3 +235,10 @@ def calcular_produtos (matriz):
                 produto *= vetor[i][j]
     
     return produto;
+#lista08_lista02_questao09
+def quantidade_de_pares(vet):
+    pares=0
+    for i in vet:
+        if i % 2 !=0 or i==1:
+            pares +=1
+    return pares
