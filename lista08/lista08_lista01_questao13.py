@@ -1,3 +1,12 @@
+#----------------------------------------------------------------------------------------------------------------------
+# Introdução a Programação de Computadores - IPC
+# Universidade do Estado do Amazonas - UEA
+# Prof. Jucimar Jr
+# Antonio Diego Furtado da Silva            1715310004
+# João Victor de Cordeiro                   1515140036
+# Matheus de Oliveira Marques               1515310514
+# Reinaldo da Silva Varas                   1715310054
+# Silas Castro de Mendonça                  1715310066
 # Desenha moldura. Construa uma função que desenhe um retângulo usando os caracteres ‘+’ , ‘−’ e ‘| ‘.
 #
 # Esta função deve receber dois parâmetros, linhas e colunas, sendo que o valor por omissão
