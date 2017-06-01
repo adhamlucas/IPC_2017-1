@@ -4,6 +4,8 @@
 # Prof. Jucimar Jr
 # Gabriel de Queiroz Sousa                  1715310044
 # Lucas Gabriel Silveira Duarte             1715310053
+# Ian Gabriel Costa Machado                 1215120276
+# Rodrigo Duarte de Souza                   1115140049
 #
 # Faça uma função que informe a quantidade de dígitos de um determinado 
 #número inteiro informado. 
