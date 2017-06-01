@@ -4,6 +4,8 @@
 # Prof. Jucimar Jr
 # Gabriel de Queiroz Sousa                  1715310044
 # Lucas Gabriel Silveira Duarte             1715310053
+# Ian Gabriel Costa Machado                 1215120276
+# Rodrigo Duarte de Souza                   1115140049
 #
 # Faça um programa, com uma função que necessite de um argumento. 
 #A função retorna o valor de caractere ‘P’, se seu argumento for positivo, 
