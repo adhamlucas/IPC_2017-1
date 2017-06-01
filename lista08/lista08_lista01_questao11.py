@@ -14,7 +14,11 @@
 # Data com mês por extenso. Construa uma função que receba uma data no formato DD/MM/AAAA e devolva uma string no formato D
 # de mesPorExtenso de AAAA. Opcionalmente, valide a data e retorne NULL caso a data seja inválida.
 
-dia, mes , ano =(input('data (DD/MM/AAA):')).split('/')
-meses = {1:"Janeiro",2:"Fevereiro", 3:"Março", 4:"Abril", 5:"Maio", 6:"Junho", 7:"Julho", 8:"Agosto", 9:"Setembro", 10:"Outubro",
-         11:"Novembro", 12:"Dezembro"}
-print('%s/%s/%s' %(dia,meses[int(mes) -1],ano))
+def mostrar_saida(date):
+    meses = {1: "Janeiro", 2: "Fevereiro", 3: "Março", 4: "Abril", 5: "Maio", 6: "Junho", 7: "Julho", 8: "Agosto",
+             9: "Setembro", 10: "Outubro", 11: "Novembro", 12: "Dezembro"}
+    return meses[int(mes)]
+
+data=input("data dd/mm/aaaa: ")
+dia, mes, ano = data.split("/")
+print(dia,"/", mostrar_saida(mes),"/",ano)
