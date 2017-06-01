@@ -1,21 +1,25 @@
-#---------------------------------------------------------------------
-# Introdução a Programação de Computadores - IPC
-# Universidade do Estado do Amazonas - UEA
-# Prof. Jucimar Jr
-# 
-# André Luis Laborda                  1515070006
-# Judá Salazar Braga                  1515200050
-# Luiz Daniel Raposo Nunes de Mello   1715310049
-# Luiz Paulo Machado                  1515200542
-# Lukas Michel Souza Mota             1715310018
-#
-# Faça uma função que receba, por parâmetro, uma matriz A(10, 10) e
-# retorne a soma dos elementos acima da diagonal principal
-# 
-#---------------------------------------------------------------------
+def media_diagonal_principal (matriz):
 
-from ipc import matriz
+    media = 0
 
-M = matriz.cria_matriz(10, 10)
-soma = matriz.soma_acima_diagonal_principal(M)
-print(soma)
+    for i in range (10):
+
+        for j in range (10):
+
+            if j > i:
+
+                media += matriz[i][j]
+
+    return media
+
+A = []
+
+for i in range (10):
+
+    A.append([0] * 10)
+
+    for j in range (10):
+
+        A[i][j] = int(input())
+
+print(media_diagonal_principal(A))
