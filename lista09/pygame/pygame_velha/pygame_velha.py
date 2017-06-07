@@ -13,6 +13,7 @@ pygame.init()
 # inicia biblioteca de fontes (texto)
 pygame.font.init()
 
+# cria formatação específica para textos
 fonte30 = pygame.font.SysFont('Comic Sans MS', 30)
 fonte50 = pygame.font.SysFont('Comic Sans MS', 50)
 
@@ -75,13 +76,18 @@ def abertura():
     # música
     pygame.mixer.music.load(jogo_inicio)
     pygame.mixer.music.set_volume(1)
-    pygame.mixer.music.play(1)
+    pygame.mixer.music.play(0)
+
+    textsurface = fonte50.render("JOGO DA VELHA", 1, WHITE)
+    screen.blit(textsurface, (int(quadrante[0] / 2) + 0, int(quadrante[1]) + 140))
 
     for i in range(1, 25):
         screen.blit(pygame.image.load('img/capcom' + str(i) + '.png'),
                     (int(quadrante[0] / 2) + 50, int(quadrante[1]) + 50))
         pygame.time.delay(100)
         pygame.display.update()
+
+    pygame.time.delay(1000)
 
 # tamanho da janela
 tela = (600, 650)
