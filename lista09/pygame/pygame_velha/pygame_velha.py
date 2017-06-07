@@ -98,12 +98,12 @@ screen.fill(BLACK)
 # dimensoes do quadrante
 quadrante = (int(tamanho_tabuleiro[0] / 3), int(tamanho_tabuleiro[1] / 3))
 
-# sounds
+# efeitos sonoros
 jogada_certa = 'audio/jogada_certa.mp3'
 jogada_errada = 'audio/jogada_errada.mp3'
 jogo_inicio = 'audio/capcom.mp3'
-jogo_perdeu = 'audio/270329__littlerobotsoundfactory__jingle-lose-00.mp3'
-jogo_ganhou = 'audio/270333__littlerobotsoundfactory__jingle-win-00.mp3'
+jogo_perdeu = 'audio/jogo_perdeu.mp3'
+jogo_ganhou = 'audio/jogo_ganhou.mp3'
 
 # abertura do jogo
 abertura()
