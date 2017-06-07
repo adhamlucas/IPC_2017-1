@@ -3,12 +3,12 @@
 import pygame
 from pygame import *
 
+# inicia biblioteca pygame
+pygame.init()
+
 # Definindo cores
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-
-# inicia biblioteca pygame
-pygame.init()
 
 # inicia biblioteca de fontes (texto)
 pygame.font.init()
@@ -18,7 +18,7 @@ fonte30 = pygame.font.SysFont('Comic Sans MS', 30)
 fonte50 = pygame.font.SysFont('Comic Sans MS', 50)
 
 
-######## FUNÇÕES ##########
+######## FUNÇÕES DO JOGO ##########
 
 # função que toca arquivo de som
 def play(caminho_arquivo):
@@ -30,24 +30,23 @@ def play(caminho_arquivo):
 # função para imprimir mensagem na área de notificações
 def mensagem(texto):
     textsurface = fonte30.render(texto, 1, WHITE)
-    screen.blit(textsurface, (10, 600))
+    tela.blit(textsurface, (10, 600))
 
 
 # função para limpar mensagens na área de notificações
 def limpar_mensagens():
-    pygame.draw.rect(screen, BLACK, (10, 600, 600, 50))
+    pygame.draw.rect(tela, BLACK, (10, 600, 600, 50))
     pygame.display.update()
 
 
 # função que finaliza o jogo
 def finaliza(texto):
     fundo = pygame.image.load("img/fundo.png").convert_alpha()
-
-    screen.blit(fundo, pygame.rect.Rect(0, 0, 128, 128))
+    tela.blit(fundo, pygame.rect.Rect(0, 0, 128, 128))
     pygame.display.flip()
     text = fonte50.render(texto, 1, WHITE)
     text_rect = text.get_rect()
-    screen.blit(text, [100, 250])
+    tela.blit(text, [100, 250])
 
 
 # funcao que verifica se algum jogador ganhou
@@ -71,37 +70,40 @@ def verifica_se_ganhou(jogada):
         return False
 
 
-# tela de abertura do jogo
+# tamanho_tela de abertura do jogo
 def abertura():
     # música
     pygame.mixer.music.load(jogo_inicio)
     pygame.mixer.music.set_volume(1)
     pygame.mixer.music.play(0)
 
+    # titulo
     textsurface = fonte50.render("JOGO DA VELHA", 1, WHITE)
-    screen.blit(textsurface, (int(quadrante[0] / 2) + 0, int(quadrante[1]) + 140))
+    tela.blit(textsurface, (int(quadrante[0] / 2) + 0, int(quadrante[1]) + 140))
 
+    # animação capcom
     for i in range(1, 25):
-        screen.blit(pygame.image.load('img/capcom' + str(i) + '.png'),
-                    (int(quadrante[0] / 2) + 50, int(quadrante[1]) + 50))
+        tela.blit(pygame.image.load('img/capcom' + str(i) + '.png'),
+                  (int(quadrante[0] / 2) + 50, int(quadrante[1]) + 50))
         pygame.time.delay(100)
-        pygame.display.update()
+        pygame.display.flip()
 
     pygame.time.delay(1000)
 
+
 # tamanho da janela
-tela = (600, 650)
+tamanho_tela = (600, 650)
 
 # tamanho do tabuleiro
 tamanho_tabuleiro = (600, 600)
 
-screen = pygame.display.set_mode(tela)
+tela = pygame.display.set_mode(tamanho_tela)
 
-# Nome do Jogo (barra)
+# Nome do Jogo (barra de título) e cor do fundo
 pygame.display.set_caption("Jogo da Velha Beta")
-screen.fill(BLACK)
+tela.fill(BLACK)
 
-# dimensoes do quadrante
+# dimensoes de cada quadrante no tabuleiro
 quadrante = (int(tamanho_tabuleiro[0] / 3), int(tamanho_tabuleiro[1] / 3))
 
 # efeitos sonoros
@@ -111,19 +113,19 @@ jogo_inicio = 'audio/capcom.mp3'
 jogo_perdeu = 'audio/jogo_perdeu.mp3'
 jogo_ganhou = 'audio/jogo_ganhou.mp3'
 
-# abertura do jogo
+# inicia abertura do jogo
 abertura()
 
 # imagem dos jogadores
 x = pygame.image.load("img/x.png")
 o = pygame.image.load("img/o.png")
-# ajustando tamanho da imagem
+# ajustando tamanho da imagem para o tamanho d quadrante
 x = pygame.transform.scale(x, quadrante)
 o = pygame.transform.scale(o, quadrante)
 
-# cria tabuleiro
+# cria tabuleiro (surface)
 tabuleiro = pygame.Surface(tamanho_tabuleiro)
-# cor de fundo
+# cor de fundo do tabuleiro
 tabuleiro.fill(WHITE)
 
 # ------- desenho das linhas do tabueiro --------
@@ -132,7 +134,7 @@ pygame.draw.rect(tabuleiro, BLACK, ((tamanho_tabuleiro[1] / 3) * 2, 0, 5, tamanh
 pygame.draw.rect(tabuleiro, BLACK, (0, (tamanho_tabuleiro[0] / 3), tamanho_tabuleiro[0], 5))
 pygame.draw.rect(tabuleiro, BLACK, (0, (tamanho_tabuleiro[0] / 3) * 2, tamanho_tabuleiro[0], 5))
 
-# posições possíveis no tabuleiro - para incluir o X e o O
+# posições ([x,y]) possíveis no tabuleiro - para incluir o X e o O
 posicoes_tabuleiro = [
     # primeira linha
     [0, 0, 0], [quadrante[0], 0, 0], [2 * quadrante[0], 0, 0],
@@ -143,17 +145,20 @@ posicoes_tabuleiro = [
 ]
 
 # adiciona o tabuleiro (testes)
-screen.blit(tabuleiro, (0, 0))
-# atualiza display
-pygame.display.update()
+tela.blit(tabuleiro, (0, 0))
+# atualiza display com o tabuleiro
+pygame.display.flip()
 
 # tabela que armazena as jogadas
 jogadas = [["X", []], ["O", []]]
 
-# jogadores
+# nomes dos jogadores
 jogador = ("X", "O")
 
+# contador de jogadas - para saber quando termina (no cado de velhar)
 jogada = 0
+
+# variável que guarda o jogador de quem vai jogar
 vez = jogador[0]
 mensagem("Vez de Jogar: " + vez)
 
@@ -163,10 +168,10 @@ done = False
 # -------- Loop de eventos -----------
 while not done:
 
+    # posição do mouse
     position = pygame.mouse.get_pos()
 
     # --- Loop principal
-
     for event in pygame.event.get():
 
         if event.type == pygame.QUIT:
@@ -189,13 +194,12 @@ while not done:
                         play(jogada_errada)
                         mensagem('Posição Ocupada! Jogue numa vazia!')
 
-                        pygame.time.delay(500)
-
                     else:
 
                         if vez == jogador[0]:
+
                             posicoes_tabuleiro[i][2] = 1
-                            screen.blit(x, (posicoes_tabuleiro[i][0], posicoes_tabuleiro[i][1]))
+                            tela.blit(x, (posicoes_tabuleiro[i][0], posicoes_tabuleiro[i][1]))
                             jogadas[1][1].append(i)
 
                             if verifica_se_ganhou(jogadas[1][1]):
@@ -212,8 +216,9 @@ while not done:
                                     play(jogada_certa)
 
                         else:
+
                             posicoes_tabuleiro[i][2] = 1
-                            screen.blit(o, (posicoes_tabuleiro[i][0], posicoes_tabuleiro[i][1]))
+                            tela.blit(o, (posicoes_tabuleiro[i][0], posicoes_tabuleiro[i][1]))
 
                             jogadas[0][1].append(i)
 
@@ -230,8 +235,6 @@ while not done:
                                     mensagem(" Vez de Jogar: " + vez)
                                     play(jogada_certa)
 
-                    pygame.display.update()
-
-    pygame.display.flip()
+                    pygame.display.flip()
 
 pygame.quit()
