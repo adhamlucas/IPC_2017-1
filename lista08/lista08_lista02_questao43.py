@@ -12,7 +12,6 @@
 # e retorna a média aritmética dos elementos abaixo da diagonal
 # principal e da diagonal secundária.
 
-
 from lista08.ipc import matriz, vetor
 
 matriz1 = matriz.cria_matriz(12, 12)

@@ -3,7 +3,7 @@
 import pygame
 from pygame import *
 
-# Define some colors
+# Definindo cores
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
@@ -83,9 +83,11 @@ def abertura():
         pygame.time.delay(100)
         pygame.display.update()
 
-
+# tamanho da janela
 tela = (600, 650)
-size = (600, 600)
+
+# tamanho do tabuleiro
+tamanho_tabuleiro = (600, 600)
 
 screen = pygame.display.set_mode(tela)
 
@@ -94,7 +96,7 @@ pygame.display.set_caption("Jogo da Velha Beta")
 screen.fill(BLACK)
 
 # dimensoes do quadrante
-quadrante = (int(size[0] / 3), int(size[1] / 3))
+quadrante = (int(tamanho_tabuleiro[0] / 3), int(tamanho_tabuleiro[1] / 3))
 
 # sounds
 jogada_certa = 'audio/jogada_certa.mp3'
@@ -114,14 +116,15 @@ x = pygame.transform.scale(x, quadrante)
 o = pygame.transform.scale(o, quadrante)
 
 # cria tabuleiro
-tabuleiro = pygame.Surface(size)
+tabuleiro = pygame.Surface(tamanho_tabuleiro)
+# cor de fundo
 tabuleiro.fill(WHITE)
 
 # ------- desenho das linhas do tabueiro --------
-pygame.draw.rect(tabuleiro, BLACK, ((size[1] / 3), 0, 5, size[1]))
-pygame.draw.rect(tabuleiro, BLACK, ((size[1] / 3) * 2, 0, 5, size[1]))
-pygame.draw.rect(tabuleiro, BLACK, (0, (size[0] / 3), size[0], 5))
-pygame.draw.rect(tabuleiro, BLACK, (0, (size[0] / 3) * 2, size[0], 5))
+pygame.draw.rect(tabuleiro, BLACK, ((tamanho_tabuleiro[1] / 3), 0, 5, tamanho_tabuleiro[1]))
+pygame.draw.rect(tabuleiro, BLACK, ((tamanho_tabuleiro[1] / 3) * 2, 0, 5, tamanho_tabuleiro[1]))
+pygame.draw.rect(tabuleiro, BLACK, (0, (tamanho_tabuleiro[0] / 3), tamanho_tabuleiro[0], 5))
+pygame.draw.rect(tabuleiro, BLACK, (0, (tamanho_tabuleiro[0] / 3) * 2, tamanho_tabuleiro[0], 5))
 
 # posições possíveis no tabuleiro - para incluir o X e o O
 posicoes_tabuleiro = [
