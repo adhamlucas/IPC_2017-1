@@ -119,7 +119,7 @@ abertura()
 # imagem dos jogadores
 x = pygame.image.load("img/x.png")
 o = pygame.image.load("img/o.png")
-# ajustando tamanho da imagem para o tamanho d quadrante
+# ajustando tamanho da imagem para o tamanho do quadrante
 x = pygame.transform.scale(x, quadrante)
 o = pygame.transform.scale(o, quadrante)
 
